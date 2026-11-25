@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rivals Arena — Onde a rivalidade começa.</title>
+<meta name="description" content="Rivals Arena: a plataforma onde jogadores se encontram, competem e vivem grandes experiências. Descubra o jogo Bellator, participe de torneios e forme seu time.">
+<link rel="icon" href="img/logo-rivals-arena-reduzida-RA-png.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/paginas.css">
+</head>
+<body class="pagina-inicial">
+
+<!-- ===================== CABEÇALHO (igual em todas as páginas) ===================== -->
+<header id="siteHeader">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <img src="img/logo-rivals-arena-reduzida-RA-png.png" alt="">
+      <span>RIVALS ARENA</span>
+    </a>
+    <nav class="links">
+      <a href="index.html" class="active">Home</a>
+      <a href="torneios.html">Torneios</a>
+      <a href="partidas.html">Partidas</a>
+      <a href="ranking.html">Ranking</a>
+      <a href="times.html">Times</a>
+      <a href="bellator.html">Bellator</a>
+      <a href="jogar.html">Jogar</a>
+      <a href="novidades.html">Novidades</a>
+    </nav>
+    <div class="nav-cta">
+      <!-- Preenchido pelo js/comum.js: botão "Entrar" ou o menu do usuário logado -->
+      <div id="areaUsuario"></div>
+      <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="torneios.html">Torneios</a>
+    <a href="partidas.html">Partidas</a>
+    <a href="ranking.html">Ranking</a>
+    <a href="times.html">Times</a>
+    <a href="bellator.html">Bellator</a>
+      <a href="jogar.html">Jogar</a>
+    <a href="novidades.html">Novidades</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ===================== HERO (carrossel com 2 slides) ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-slides" id="heroSlides">
+      <article class="hero-slide active" data-slide="0">
+        <div class="hero-panel">
+          <h1>ONDE A RIVALIDADE<span>COMEÇA.</span></h1>
+          <p class="hero-copy">Rivals Arena é a plataforma onde jogadores se encontram, competem e vivem grandes experiências. Descubra o jogo Bellator, participe de torneios, forme seu time e faça parte de uma comunidade que não para de crescer.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="info.html?p=sobre">SAIBA MAIS
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="torneios.html">EXPLORAR HUB
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </div>
+        <!-- Imagem de fundo: classe "arte" (ver css/paginas.css). As imagens ficam na pasta img/. -->
+        <div class="hero-media arte arte-hero"></div>
+      </article>
+      <article class="hero-slide" data-slide="1">
+        <div class="hero-media arte arte-3"></div>
+        <div class="hero-panel right">
+          <img class="hero-slide-logo" src="img/logo-rivals-arena-completa-com-a-palavra-em-branco-png.png" alt="Rivals Arena">
+          <h1 style="font-size:1.1rem; letter-spacing:.12em; color:var(--dim); font-weight:600;">JOGO PRINCIPAL</h1>
+          <p class="hero-copy" style="margin-left:auto;">Entre no nosso jogo principal, uma experiência intensa no Coliseu, onde jogadores, equipes e estratégias definem quem será o sobrevivente.</p>
+          <div class="hero-actions">
+            <a class="btn btn-pill" href="jogar.html">JOGAR BELLATOR</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="hero-dots" id="heroDots">
+      <button class="active" data-slide="0" aria-label="Slide 1"></button>
+      <button data-slide="1" aria-label="Slide 2"></button>
+    </div>
+  </section>
+
+  <!-- ===================== RECURSOS ===================== -->
+  <section class="section features">
+    <div class="wrap">
+      <p class="eyebrow center">RIVALS ARENA</p>
+      <h2 class="center">TUDO PARA QUEM QUER <span>COMPETIR!</span></h2>
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4Z"/><path d="M7 5H4v2a3 3 0 0 0 3 3M17 5h3v2a3 3 0 0 1-3 3"/></svg>
+          <h3>CAMPEONATOS</h3>
+          <p class="feature-sub">Crie, participe e dispute.</p>
+          <p class="feature-desc">Crie ou entre em campeonatos, monte sua equipe, acompanhe as partidas e dispute contra jogadores de diferentes níveis em competições organizadas pela comunidade.</p>
+          <a class="feature-arrow" href="torneios.html" aria-label="Ver campeonatos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </article>
+        <article class="feature-card reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3 18 15M18 3 6 15"/><path d="M6 15 4 21M18 15l2 6"/></svg>
+          <h3>PARTIDAS</h3>
+          <p class="feature-sub">Encontre seu próximo desafio.</p>
+          <p class="feature-desc">Entre em partidas, enfrente outros jogadores e coloque suas habilidades à prova. Escolha seu modo de jogo e encontre confrontos que combinam com seu estilo competitivo.</p>
+          <a class="feature-arrow" href="partidas.html" aria-label="Ver partidas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </article>
+        <article class="feature-card reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M12 20V4M20 20v-7"/></svg>
+          <h3>RANKINGS</h3>
+          <p class="feature-sub">Mostre do que você é capaz.</p>
+          <p class="feature-desc">Acompanhe suas vitórias, derrotas e desempenho ao longo das partidas. Suba no ranking, compare seus resultados e conquiste seu espaço entre os melhores jogadores da Arena.</p>
+          <a class="feature-arrow" href="ranking.html" aria-label="Ver rankings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </article>
+        <article class="feature-card reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.4"/><circle cx="17" cy="9.5" r="2.6"/><path d="M3 20c0-3.6 2.7-6 6-6s6 2.4 6 6M14.5 14.6c2.6.3 4.5 2.3 4.5 5.4"/></svg>
+          <h3>TIMES</h3>
+          <p class="feature-sub">Jogue junto. Evolua junto.</p>
+          <p class="feature-desc">Crie ou entre para uma equipe, encontre jogadores com o mesmo objetivo e participe de competições em grupo. Trabalhe em conjunto para alcançar melhores resultados.</p>
+          <a class="feature-arrow" href="times.html" aria-label="Ver times"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BELLATOR + HUB COMPETITIVO (unificados) ===================== -->
+  <section class="section split-promo" id="hub">
+    <div class="wrap split-grid">
+      <div class="promo-card bellator-card arte arte-1 reveal">
+        <p class="eyebrow">NOVO JOGO DA RIVALS ARENA</p>
+        <img class="logo-bellator" src="img/bellator-logo.png" alt="Bellator">
+        <p>Participe de batalhas, conquiste objetivos e supere desafios enquanto busca seu lugar entre os melhores combatentes da Arena.</p>
+        <a class="btn btn-ghost" href="jogar.html">JOGAR AGORA
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+
+      <div class="promo-card hub-card reveal">
+        <div class="hub-topo">
+          <p class="eyebrow" style="margin:0">HUB COMPETITIVO</p>
+          <span class="live-dot"><i></i>Temporada I</span>
+        </div>
+        <h3>TORNEIOS, RANKINGS E MUITO MAIS</h3>
+
+        <!-- Abas: o conteúdo de cada uma vem dos dados reais (js/paginas/inicio.js) -->
+        <div class="abas abas-hub" id="abasHub">
+          <button type="button" class="ativa" data-aba="hub-torneios">Torneios</button>
+          <button type="button" data-aba="hub-ranking">Ranking</button>
+          <button type="button" data-aba="hub-equipes">Equipes</button>
+          <button type="button" data-aba="hub-partidas">Partidas</button>
+        </div>
+
+        <div class="aba-conteudo ativa" id="aba-hub-torneios">
+          <ul class="mini-tourney-list" id="miniTorneios"></ul>
+          <div class="hub-rodape"><a href="criar-torneio.html">+ CRIAR CAMPEONATO</a><a href="torneios.html">VER TODOS</a></div>
+        </div>
+        <div class="aba-conteudo" id="aba-hub-ranking">
+          <ul class="mini-rank-list" id="miniRanking"></ul>
+          <div class="hub-rodape"><span></span><a href="ranking.html">RANKING COMPLETO</a></div>
+        </div>
+        <div class="aba-conteudo" id="aba-hub-equipes">
+          <ul class="mini-rank-list" id="miniEquipes"></ul>
+          <div class="hub-rodape"><a href="times.html?criar=1">+ CRIAR EQUIPE</a><a href="times.html">VER EQUIPES</a></div>
+        </div>
+        <div class="aba-conteudo" id="aba-hub-partidas">
+          <ul class="mini-tourney-list" id="miniPartidas"></ul>
+          <div class="hub-rodape"><span></span><a href="partidas.html">TODAS AS PARTIDAS</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMUNIDADE ===================== -->
+  <section class="section community">
+    <div class="wrap community-grid">
+      <div class="reveal">
+        <p class="eyebrow">MAIS QUE UM JOGO</p>
+        <h2>UMA COMUNIDADE <span>QUE NÃO PARA!</span></h2>
+        <p>Na Rivals Arena, você não está sozinho. Aqui você encontra jogadores, faz amigos, participa de eventos, compartilha conquistas e faz parte de uma comunidade que vive e respira competição.</p>
+        <div class="community-points">
+          <div>
+            <div class="cp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.4"/><circle cx="17" cy="9.5" r="2.6"/><path d="M3 20c0-3.6 2.7-6 6-6s6 2.4 6 6M14.5 14.6c2.6.3 4.5 2.3 4.5 5.4"/></svg></div>
+            <h5>CONEXÕES REAIS</h5>
+            <p>Conheça pessoas com o mesmo objetivo que o seu e jogue junto.</p>
+          </div>
+          <div>
+            <div class="cp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4v4h16V7Z"/><path d="M12 7v13M4 11v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="M12 7c-1.5 0-4-1-4-2.8A1.8 1.8 0 0 1 9.8 2.4C11.5 2.4 12 5 12 7ZM12 7c1.5 0 4-1 4-2.8a1.8 1.8 0 0 0-1.8-1.8C12.5 2.4 12 5 12 7Z"/></svg></div>
+            <h5>RECOMPENSAS</h5>
+            <p>Conquiste prêmios, itens exclusivos e reconheça seu progresso dentro da Arena.</p>
+          </div>
+          <div>
+            <div class="cp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a9 9 0 0 0-9 9v5a2 2 0 0 0 2 2h1v-7H4v-1a8 8 0 0 1 16 0v1h-2v7h1a2 2 0 0 0 2-2v-5a9 9 0 0 0-9-9Z"/><path d="M16 20a2 2 0 0 1-2 2h-2"/></svg></div>
+            <h5>SUPORTE ATIVO</h5>
+            <p>Conte com nossa equipe e com a comunidade para ajudar você a evoluir. <a href="info.html?p=suporte" style="color:var(--orange)">Falar com o suporte</a></p>
+          </div>
+          <div>
+            <div class="cp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
+            <h5>EVENTOS EXCLUSIVOS</h5>
+            <p>Participe de eventos, torneios e desafios especiais da comunidade. <a href="novidades.html?categoria=EVENTO" style="color:var(--orange)">Ver eventos</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="community-media arte arte-4 reveal"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ORIGEM DO NOME ===================== -->
+  <section class="section" id="origem">
+    <div class="wrap">
+      <div class="plaque reveal">
+        <img src="img/logo-rivals-arena-completa-com-a-palavra-em-preto-png.png" alt="Rivals Arena" style="filter:invert(1) grayscale(1) brightness(1.6);">
+        <div>
+          <p class="eyebrow">ORIGEM DO NOME</p>
+          <h2>Bellator</h2>
+          <span class="latin">do latim, "aquele que guerreia"</span>
+          <p>O nome batiza o jogo de combate ambientado na Roma Antiga — uma referência direta ao imperador que ergueu o Coliseu e às regras que impôs à arena.</p>
+          <p>Bellator nasceu como Projeto Integrador e hoje compete dentro da Rivals Arena: o hub que organiza os campeonatos, monta as equipes e acompanha o ranking — do primeiro combate à consagração na arena.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NOVIDADES ===================== -->
+  <section class="section novidades">
+    <div class="wrap novidades-grid">
+      <div class="novidades-intro reveal">
+        <p class="eyebrow">NOVIDADES, EVENTOS</p>
+        <h2>E MUITO MAIS</h2>
+        <p>Acompanhe as últimas atualizações, fique por dentro dos próximos torneios, conheça os novos conteúdos e não perca nenhuma novidade da Rivals Arena.</p>
+        <a class="btn btn-ghost" href="novidades.html">VER TODAS AS NOVIDADES
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+      <article class="news-card reveal">
+        <div class="arte arte-6" style="aspect-ratio:4/3"></div>
+        <div class="news-body">
+          <span class="badge">TORNEIO</span>
+          <span class="news-date">ESTA SEMANA</span>
+          <h4>Rival Cup #12</h4>
+          <p>O maior torneio da comunidade está de volta! Reúna seu time, prepare sua estratégia e lute pelo título.</p>
+          <a class="news-link" href="noticia.html?id=n1">SAIBA MAIS</a>
+        </div>
+      </article>
+      <article class="news-card reveal">
+        <div class="arte arte-2" style="aspect-ratio:4/3"></div>
+        <div class="news-body">
+          <span class="badge">EVENTO</span>
+          <span class="news-date">ESTA SEMANA</span>
+          <h4>Festival da Arena</h4>
+          <p>Um evento especial com recompensas exclusivas, desafios e muito mais. Não fique de fora!</p>
+          <a class="news-link" href="noticia.html?id=n2">SAIBA MAIS</a>
+        </div>
+      </article>
+      <article class="news-card reveal">
+        <div class="arte arte-5" style="aspect-ratio:4/3"></div>
+        <div class="news-body">
+          <span class="badge">ATUALIZAÇÃO</span>
+          <span class="news-date">TEMPORADA I</span>
+          <h4>Nova Temporada</h4>
+          <p>Novos conteúdos, ajustes e novidades chegam para transformar a próxima temporada.</p>
+          <a class="news-link" href="noticia.html?id=n3">SAIBA MAIS</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+
+<button id="backToTop" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<!-- ===================== RODAPÉ (igual em todas as páginas) ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="brand" href="index.html">
+        <img src="img/logo-rivals-arena-reduzida-RA-png.png" alt="">
+        <span>RIVALS ARENA</span>
+      </a>
+      <nav class="foot-legal-links">
+        <a href="info.html?p=imprensa">IMPRENSA</a>
+        <a href="info.html?p=seguranca">SEGURANÇA</a>
+        <a href="info.html?p=juridico">JURÍDICO</a>
+        <a href="info.html?p=termos">TERMOS DE SERVIÇO</a>
+        <a href="info.html?p=privacidade">POLÍTICA DE PRIVACIDADE</a>
+        <a href="info.html?p=suporte">SUPORTE AO JOGADOR</a>
+        <a href="info.html?p=verificacao">E-VERIFY</a>
+        <a href="info.html?p=acessibilidade">ACESSIBILIDADE</a>
+      </nav>
+      <div class="foot-social">
+        <a href="#" data-em-breve="Nosso canal no YouTube chega em breve!" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9.5v5l5-2.5-5-2.5Z" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" data-em-breve="Nosso Instagram chega em breve!" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" data-em-breve="Nosso TikTok chega em breve!" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46M14 4c0 2.2 1.8 4 4 4"/></svg></a>
+        <a href="#" data-em-breve="Nosso servidor no Discord abre em breve!" aria-label="Discord"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 7.5C9 6.5 11 6 12 6s3 .5 5 1.5c1.3 2 2 4.5 2 7.5-1.3 1-2.8 1.6-4 2l-.8-1.4c.7-.2 1.4-.5 2-1-.5.3-2.1 1-4.2 1s-3.7-.7-4.2-1c.6.5 1.3.8 2 1L7 17c-1.2-.4-2.7-1-4-2 0-3 .7-5.5 2-7.5Z"/><circle cx="9.5" cy="13" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="13" r="1" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Rivals Arena. Todos os Direitos Reservados</span>
+      <span>Mais que uma plataforma. É a sua arena.</span>
+      <a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">VOLTAR AO TOPO ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Ordem importa: dados -> banco -> comum -> script da página -->
+<script src="js/dados.js"></script>
+<script src="js/banco.js"></script>
+<script src="js/comum.js"></script>
+<script src="js/paginas/inicio.js"></script>
+</body>
+</html>

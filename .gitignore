@@ -1,0 +1,5 @@
+# arquivos locais de ferramentas (não fazem parte do site)
+.claude/
+.playwright-mcp/
+Thumbs.db
+desktop.ini

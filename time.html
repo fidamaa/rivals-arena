@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Time — Rivals Arena</title>
+<meta name="description" content="Perfil do time: membros, partidas e torneios.">
+<link rel="icon" href="img/logo-rivals-arena-reduzida-RA-png.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/paginas.css">
+</head>
+<body class="pagina-interna">
+
+<!-- ===================== CABEÇALHO (igual em todas as páginas) ===================== -->
+<header id="siteHeader">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <img src="img/logo-rivals-arena-reduzida-RA-png.png" alt="">
+      <span>RIVALS ARENA</span>
+    </a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="torneios.html">Torneios</a>
+      <a href="partidas.html">Partidas</a>
+      <a href="ranking.html">Ranking</a>
+      <a href="times.html" class="active">Times</a>
+      <a href="bellator.html">Bellator</a>
+      <a href="jogar.html">Jogar</a>
+      <a href="novidades.html">Novidades</a>
+    </nav>
+    <div class="nav-cta">
+      <!-- Preenchido pelo js/comum.js: botão "Entrar" ou o menu do usuário logado -->
+      <div id="areaUsuario"></div>
+      <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="torneios.html">Torneios</a>
+    <a href="partidas.html">Partidas</a>
+    <a href="ranking.html">Ranking</a>
+    <a href="times.html">Times</a>
+    <a href="bellator.html">Bellator</a>
+      <a href="jogar.html">Jogar</a>
+    <a href="novidades.html">Novidades</a>
+  </nav>
+</header>
+
+<main>
+  <section class="topo-pagina">
+    <div class="wrap">
+      <p class="migalhas"><a href="times.html">Times</a> / <span id="migalhaTime">...</span></p>
+      <div class="perfil-topo">
+        <span id="escudoTime"></span>
+        <div class="info">
+          <h1 id="nomeTime">Carregando...</h1>
+          <p class="subtitulo" id="subtituloTime"></p>
+          <p class="bio" id="bioTime"></p>
+        </div>
+        <!-- Botões mudam conforme quem está vendo (capitão, membro ou visitante) -->
+        <div class="acoes" id="acoesTime" style="display:flex; gap:10px; flex-wrap:wrap"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="conteudo">
+    <div class="wrap">
+      <div class="numeros" id="numerosTime" style="margin-bottom:28px"></div>
+
+      <div class="layout-detalhe">
+        <div>
+          <div class="caixa">
+            <h3>Partidas recentes</h3>
+            <div class="lista-partidas" id="partidasTime"></div>
+          </div>
+          <div class="caixa">
+            <h3>Torneios</h3>
+            <div class="grade-torneios" id="torneiosTime"></div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="caixa">
+            <h3 id="tituloMembros">Membros</h3>
+            <ul class="lista-membros" id="membrosTime"></ul>
+
+            <!-- Só para o capitão: adicionar jogador pelo nome de usuário -->
+            <form class="formulario" id="formConvidar" hidden style="margin-top:18px; gap:10px">
+              <div class="campo">
+                <label for="usuarioConvidado">Adicionar jogador</label>
+                <input type="text" id="usuarioConvidado" placeholder="Nome de usuário (ex.: Ossa)" list="sugestoesJogadores" autocomplete="off">
+                <datalist id="sugestoesJogadores"></datalist>
+              </div>
+              <button class="btn btn-ghost btn-sm" type="submit">ADICIONAR AO TIME</button>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Janela "Editar time" (só capitão) -->
+<dialog id="janelaEditarTime">
+  <form class="formulario" id="formEditarTime" novalidate>
+    <h2>Editar time</h2>
+    <div class="campo">
+      <label for="editarNome">Nome</label>
+      <input type="text" id="editarNome" maxlength="30" required>
+    </div>
+    <div class="campo">
+      <label for="editarBio">Descrição</label>
+      <textarea id="editarBio" maxlength="200"></textarea>
+    </div>
+    <div class="campo">
+      <label for="editarCor">Cor do time</label>
+      <input type="color" id="editarCor">
+    </div>
+    <div class="mensagem-erro" id="erroEditarTime"></div>
+    <div class="acoes-dialog">
+      <button class="btn btn-perigo btn-sm" type="button" id="botaoExcluirTime">EXCLUIR TIME</button>
+      <button class="btn btn-escuro btn-sm" type="button" id="cancelarEditarTime">CANCELAR</button>
+      <button class="btn btn-primary btn-sm" type="submit">SALVAR</button>
+    </div>
+  </form>
+</dialog>
+
+
+<button id="backToTop" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<!-- ===================== RODAPÉ (igual em todas as páginas) ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="brand" href="index.html">
+        <img src="img/logo-rivals-arena-reduzida-RA-png.png" alt="">
+        <span>RIVALS ARENA</span>
+      </a>
+      <nav class="foot-legal-links">
+        <a href="info.html?p=imprensa">IMPRENSA</a>
+        <a href="info.html?p=seguranca">SEGURANÇA</a>
+        <a href="info.html?p=juridico">JURÍDICO</a>
+        <a href="info.html?p=termos">TERMOS DE SERVIÇO</a>
+        <a href="info.html?p=privacidade">POLÍTICA DE PRIVACIDADE</a>
+        <a href="info.html?p=suporte">SUPORTE AO JOGADOR</a>
+        <a href="info.html?p=verificacao">E-VERIFY</a>
+        <a href="info.html?p=acessibilidade">ACESSIBILIDADE</a>
+      </nav>
+      <div class="foot-social">
+        <a href="#" data-em-breve="Nosso canal no YouTube chega em breve!" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9.5v5l5-2.5-5-2.5Z" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" data-em-breve="Nosso Instagram chega em breve!" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" data-em-breve="Nosso TikTok chega em breve!" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46M14 4c0 2.2 1.8 4 4 4"/></svg></a>
+        <a href="#" data-em-breve="Nosso servidor no Discord abre em breve!" aria-label="Discord"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 7.5C9 6.5 11 6 12 6s3 .5 5 1.5c1.3 2 2 4.5 2 7.5-1.3 1-2.8 1.6-4 2l-.8-1.4c.7-.2 1.4-.5 2-1-.5.3-2.1 1-4.2 1s-3.7-.7-4.2-1c.6.5 1.3.8 2 1L7 17c-1.2-.4-2.7-1-4-2 0-3 .7-5.5 2-7.5Z"/><circle cx="9.5" cy="13" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="13" r="1" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Rivals Arena. Todos os Direitos Reservados</span>
+      <span>Mais que uma plataforma. É a sua arena.</span>
+      <a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">VOLTAR AO TOPO ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Ordem importa: dados -> banco -> comum -> script da página -->
+<script src="js/dados.js"></script>
+<script src="js/banco.js"></script>
+<script src="js/comum.js"></script>
+<script src="js/paginas/time.js"></script>
+</body>
+</html>

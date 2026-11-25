@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jogar Bellator — Rivals Arena</title>
+<meta name="description" content="Jogue Bellator direto no navegador e entre no ranking da Rivals Arena.">
+<link rel="icon" href="img/logo-rivals-arena-reduzida-RA-png.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/paginas.css">
+</head>
+<body class="pagina-interna">
+
+<!-- ===================== CABEÇALHO (igual em todas as páginas) ===================== -->
+<header id="siteHeader">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <img src="img/logo-rivals-arena-reduzida-RA-png.png" alt="">
+      <span>RIVALS ARENA</span>
+    </a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="torneios.html">Torneios</a>
+      <a href="partidas.html">Partidas</a>
+      <a href="ranking.html">Ranking</a>
+      <a href="times.html">Times</a>
+      <a href="bellator.html">Bellator</a>
+      <a href="jogar.html" class="active">Jogar</a>
+      <a href="novidades.html">Novidades</a>
+    </nav>
+    <div class="nav-cta">
+      <!-- Preenchido pelo js/comum.js: botão "Entrar" ou o menu do usuário logado -->
+      <div id="areaUsuario"></div>
+      <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="torneios.html">Torneios</a>
+    <a href="partidas.html">Partidas</a>
+    <a href="ranking.html">Ranking</a>
+    <a href="times.html">Times</a>
+    <a href="bellator.html">Bellator</a>
+      <a href="jogar.html">Jogar</a>
+    <a href="novidades.html">Novidades</a>
+  </nav>
+</header>
+
+<main>
+  <section class="conteudo">
+    <div class="wrap">
+      <div class="topo-linha" style="margin-bottom:22px">
+        <div>
+          <p class="eyebrow">JOGUE NO NAVEGADOR</p>
+          <h1 class="titulo-jogar">Jogar <span>Bellator</span></h1>
+        </div>
+        <a class="btn btn-ghost btn-sm" href="https://dedechi.itch.io/bellator" target="_blank" rel="noopener">ABRIR NO ITCH.IO ↗</a>
+      </div>
+
+      <!-- Aparece quando a página é aberta a partir de uma partida (jogar.html?partida=...) -->
+      <div class="caixa caixa-partida-vinculada" id="partidaVinculada" hidden></div>
+
+      <!-- ===================== O JOGO =====================
+           O jogo é a versão WebGL publicada no itch.io, aberta pelo "embed"
+           oficial do itch.io (o endereço direto do jogo é bloqueado fora do
+           itch.io). Ele só é carregado quando a pessoa clica em "Jogar".
+
+           ATENÇÃO: quando vocês publicarem uma build nova no itch.io, o número
+           (20498117) pode mudar. Para ver o novo: página do jogo no itch.io >
+           botão "Embed" > copie o endereço "itch.io/embed-upload/NÚMERO".   -->
+      <div class="tela-jogo" id="telaJogo" data-endereco-do-jogo="https://itch.io/embed-upload/20498117?color=101010">
+        <div class="capa-jogo arte arte-hero" id="capaJogo">
+          <img class="logo-bellator" src="img/bellator-logo.png" alt="Bellator">
+          <button class="btn btn-primary botao-jogar" type="button" id="botaoJogar">▶ JOGAR AGORA</button>
+          <p>Ação em terceira pessoa no Coliseu · Feito em Unity · Grátis</p>
+        </div>
+      </div>
+
+      <div class="barra-jogo">
+        <span id="statusIntegracao" class="status-integracao">Integração com o site: aguardando o jogo iniciar</span>
+        <div style="display:flex; gap:10px; flex-wrap:wrap">
+          <button class="btn btn-escuro btn-sm" type="button" id="botaoTelaCheia">TELA CHEIA</button>
+        </div>
+      </div>
+
+      <div class="layout-detalhe" style="margin-top:28px">
+        <div>
+          <div class="caixa">
+            <h3>Como jogar</h3>
+            <ul class="lista-simples">
+              <li><span><b style="color:#fff">Atacar, esquivar e rolar</b><small>Combate inspirado em Soulslike: leia o inimigo e ataque na hora certa.</small></span></li>
+              <li><span><b style="color:#fff">Aim Lock</b><small>Trave a mira em um inimigo para circular e atacar sem perdê-lo de vista.</small></span></li>
+              <li><span><b style="color:#fff">Sobrevivência (5 ondas)</b><small>Derrote as 5 ondas de gladiadores para vencer.</small></span></li>
+              <li><span><b style="color:#fff">Ondas infinitas</b><small>Sobreviva o máximo que puder. Seu melhor resultado entra no ranking abaixo.</small></span></li>
+            </ul>
+            <p style="font-size:.78rem; margin-top:14px">Clique dentro do jogo para ele receber o teclado e o mouse.</p>
+          </div>
+
+          <div class="caixa">
+            <h3>Meus resultados</h3>
+            <div id="meusResultados"></div>
+          </div>
+
+          <!-- Ferramenta para testar a integração sem jogar (útil na apresentação) -->
+          <details class="caixa teste-integracao">
+            <summary>Para desenvolvedores: testar a integração</summary>
+            <p style="font-size:.82rem; margin:12px 0">Simula o jogo enviando um resultado para o site, do mesmo jeito que o código Unity da pasta <code>integracao-unity/</code> faz.</p>
+            <div class="formulario-placar">
+              <div class="campo">
+                <label for="testeModo">Modo</label>
+                <select id="testeModo"><option value="infinito">Ondas infinitas</option><option value="sobrevivencia">Sobrevivência</option></select>
+              </div>
+              <div class="campo">
+                <label for="testeOndas">Ondas</label>
+                <input type="number" id="testeOndas" min="0" max="999" value="12">
+              </div>
+              <button class="btn btn-ghost btn-sm" type="button" id="botaoTeste">SIMULAR FIM DE PARTIDA</button>
+            </div>
+          </details>
+        </div>
+
+        <aside>
+          <div class="caixa" id="caixaJogador"></div>
+          <div class="caixa">
+            <h3>Ranking · Ondas infinitas</h3>
+            <ol class="lista-ranking-jogo" id="rankingInfinito"></ol>
+            <a class="link-simples" href="ranking.html#bellator">VER RANKING COMPLETO</a>
+          </div>
+          <div class="caixa">
+            <h3>Ranking · Sobrevivência</h3>
+            <ol class="lista-ranking-jogo" id="rankingSobrevivencia"></ol>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<button id="backToTop" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<!-- ===================== RODAPÉ (igual em todas as páginas) ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="brand" href="index.html">
+        <img src="img/logo-rivals-arena-reduzida-RA-png.png" alt="">
+        <span>RIVALS ARENA</span>
+      </a>
+      <nav class="foot-legal-links">
+        <a href="info.html?p=imprensa">IMPRENSA</a>
+        <a href="info.html?p=seguranca">SEGURANÇA</a>
+        <a href="info.html?p=juridico">JURÍDICO</a>
+        <a href="info.html?p=termos">TERMOS DE SERVIÇO</a>
+        <a href="info.html?p=privacidade">POLÍTICA DE PRIVACIDADE</a>
+        <a href="info.html?p=suporte">SUPORTE AO JOGADOR</a>
+        <a href="info.html?p=verificacao">E-VERIFY</a>
+        <a href="info.html?p=acessibilidade">ACESSIBILIDADE</a>
+      </nav>
+      <div class="foot-social">
+        <a href="#" data-em-breve="Nosso canal no YouTube chega em breve!" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9.5v5l5-2.5-5-2.5Z" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" data-em-breve="Nosso Instagram chega em breve!" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" data-em-breve="Nosso TikTok chega em breve!" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46M14 4c0 2.2 1.8 4 4 4"/></svg></a>
+        <a href="#" data-em-breve="Nosso servidor no Discord abre em breve!" aria-label="Discord"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 7.5C9 6.5 11 6 12 6s3 .5 5 1.5c1.3 2 2 4.5 2 7.5-1.3 1-2.8 1.6-4 2l-.8-1.4c.7-.2 1.4-.5 2-1-.5.3-2.1 1-4.2 1s-3.7-.7-4.2-1c.6.5 1.3.8 2 1L7 17c-1.2-.4-2.7-1-4-2 0-3 .7-5.5 2-7.5Z"/><circle cx="9.5" cy="13" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="13" r="1" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Rivals Arena. Todos os Direitos Reservados</span>
+      <span>Mais que uma plataforma. É a sua arena.</span>
+      <a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">VOLTAR AO TOPO ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Ordem importa: dados -> banco -> comum -> script da página -->
+<script src="js/dados.js"></script>
+<script src="js/banco.js"></script>
+<script src="js/comum.js"></script>
+<script src="js/paginas/jogar.js"></script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Institucional — Rivals Arena</title>
+<meta name="description" content="Sobre, suporte, termos, privacidade e mais.">
+<link rel="icon" href="img/logo-rivals-arena-reduzida-RA-png.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/paginas.css">
+</head>
+<body class="pagina-interna">
+
+<!-- ===================== CABEÇALHO (igual em todas as páginas) ===================== -->
+<header id="siteHeader">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <img src="img/logo-rivals-arena-reduzida-RA-png.png" alt="">
+      <span>RIVALS ARENA</span>
+    </a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="torneios.html">Torneios</a>
+      <a href="partidas.html">Partidas</a>
+      <a href="ranking.html">Ranking</a>
+      <a href="times.html">Times</a>
+      <a href="bellator.html">Bellator</a>
+      <a href="jogar.html">Jogar</a>
+      <a href="novidades.html">Novidades</a>
+    </nav>
+    <div class="nav-cta">
+      <!-- Preenchido pelo js/comum.js: botão "Entrar" ou o menu do usuário logado -->
+      <div id="areaUsuario"></div>
+      <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="torneios.html">Torneios</a>
+    <a href="partidas.html">Partidas</a>
+    <a href="ranking.html">Ranking</a>
+    <a href="times.html">Times</a>
+    <a href="bellator.html">Bellator</a>
+      <a href="jogar.html">Jogar</a>
+    <a href="novidades.html">Novidades</a>
+  </nav>
+</header>
+
+<main>
+  <section class="topo-pagina">
+    <div class="wrap">
+      <p class="eyebrow">RIVALS ARENA</p>
+      <h1 id="tituloInfo">Institucional</h1>
+    </div>
+  </section>
+
+  <section class="conteudo">
+    <div class="wrap layout-info">
+      <!-- Menu lateral: cada link abre uma seção (?p=nome) -->
+      <nav class="menu-info" id="menuInfo">
+        <a href="info.html?p=sobre">Sobre a Rivals Arena</a>
+        <a href="info.html?p=suporte">Suporte ao jogador</a>
+        <a href="info.html?p=termos">Termos de serviço</a>
+        <a href="info.html?p=privacidade">Política de privacidade</a>
+        <a href="info.html?p=seguranca">Segurança</a>
+        <a href="info.html?p=verificacao">E-Verify (verificação)</a>
+        <a href="info.html?p=juridico">Jurídico</a>
+        <a href="info.html?p=imprensa">Imprensa</a>
+        <a href="info.html?p=acessibilidade">Acessibilidade</a>
+      </nav>
+
+      <div>
+        <!-- Cada <section> é uma página. O js/paginas/info.js mostra só a escolhida. -->
+
+        <!-- ================= SOBRE ================= -->
+        <section class="texto-info" id="sobre" data-titulo="Sobre a Rivals Arena" hidden>
+          <h2>O que é a Rivals Arena</h2>
+          <p>A Rivals Arena é uma plataforma onde jogadores se encontram, competem e vivem grandes experiências. Aqui qualquer pessoa pode criar e participar de campeonatos, montar times, acompanhar partidas e subir no ranking.</p>
+          <h2>Bellator</h2>
+          <p>O jogo principal da plataforma é o <a href="bellator.html">Bellator</a>, um jogo de combate ambientado na Roma Antiga, criado como Projeto Integrador (TCC) e feito em Unity. Ele pode ser jogado direto no site, na página <a href="jogar.html">Jogar</a>, e os resultados vão para o ranking da Rivals Arena.</p>
+          <h2>Como funciona</h2>
+          <ul>
+            <li><b>Crie sua conta</b> e escolha seu guerreiro favorito.</li>
+            <li><b>Monte ou entre em um time</b> para disputar torneios 2v2 e 3v3.</li>
+            <li><b>Inscreva-se em um torneio</b> ou crie o seu. Quando o organizador inicia o torneio, o chaveamento é gerado automaticamente.</li>
+            <li><b>Envie os resultados</b> de cada partida. O vencedor avança e o ranking é atualizado na hora.</li>
+          </ul>
+          <p style="margin-top:20px"><a class="btn btn-primary" href="entrar.html#cadastro" style="color:#fff">CRIAR MINHA CONTA</a></p>
+        </section>
+
+        <!-- ================= SUPORTE ================= -->
+        <section class="texto-info" id="suporte" data-titulo="Suporte ao jogador" hidden>
+          <h2>Perguntas frequentes</h2>
+          <div class="acordeao">
+            <details>
+              <summary>Como me inscrevo em um torneio?</summary>
+              <p>Entre na sua conta, abra o torneio em <a href="torneios.html">Torneios</a> e clique em "Inscrever-se". Em torneios 2v2 e 3v3 quem inscreve é o capitão do time, e o time precisa ter jogadores suficientes.</p>
+            </details>
+            <details>
+              <summary>Como crio um time?</summary>
+              <p>Vá em <a href="times.html">Times</a> e clique em "Criar time". Você vira o capitão e pode adicionar jogadores pelo nome de usuário.</p>
+            </details>
+            <details>
+              <summary>Quem envia o resultado da partida?</summary>
+              <p>O organizador do torneio ou qualquer jogador que participou da partida. Depois de enviado, o resultado não pode ser alterado — confira antes de confirmar.</p>
+            </details>
+            <details>
+              <summary>Como funciona a pontuação do ranking?</summary>
+              <p>Cada vitória vale +25 pontos, cada derrota −15 e vencer um torneio dá +100 pontos de bônus. Nos torneios de times, todos os membros do time recebem os pontos.</p>
+            </details>
+            <details>
+              <summary>Esqueci minha senha. E agora?</summary>
+              <p>Envie uma mensagem pelo formulário abaixo com o assunto "Minha conta" e o e-mail cadastrado. Nossa equipe vai ajudar você a recuperar o acesso.</p>
+            </details>
+            <details>
+              <summary>Onde jogo o Bellator?</summary>
+              <p>Direto no navegador, na página <a href="jogar.html">Jogar</a> (ou no <a href="https://dedechi.itch.io/bellator" target="_blank" rel="noopener">itch.io</a>). Se estiver logado, seus resultados vão para o ranking da Rivals Arena.</p>
+            </details>
+          </div>
+
+          <h2>Fale com a gente</h2>
+          <form class="caixa formulario" id="formSuporte" novalidate>
+            <div class="formulario-grade">
+              <div class="campo">
+                <label for="supNome">Nome *</label>
+                <input type="text" id="supNome" maxlength="60" required>
+              </div>
+              <div class="campo">
+                <label for="supEmail">E-mail *</label>
+                <input type="email" id="supEmail" maxlength="80" required>
+              </div>
+              <div class="campo inteiro">
+                <label for="supAssunto">Assunto</label>
+                <select id="supAssunto">
+                  <option>Dúvida sobre torneio</option>
+                  <option>Minha conta</option>
+                  <option>Denunciar jogador</option>
+                  <option>Problema no site</option>
+                  <option>Sugestão</option>
+                  <option>Outro</option>
+                </select>
+              </div>
+              <div class="campo inteiro">
+                <label for="supMensagem">Mensagem *</label>
+                <textarea id="supMensagem" maxlength="1000" required></textarea>
+              </div>
+            </div>
+            <div class="mensagem-erro" id="erroSuporte"></div>
+            <div><button class="btn btn-primary" type="submit">ENVIAR MENSAGEM</button></div>
+          </form>
+        </section>
+
+        <!-- ================= TERMOS ================= -->
+        <section class="texto-info" id="termos" data-titulo="Termos de serviço" hidden>
+          <p><i>Última atualização: Temporada I.</i></p>
+          <h2>1. Aceitação</h2>
+          <p>Ao criar uma conta ou usar a Rivals Arena, você concorda com estes termos. Se não concordar, não use a plataforma.</p>
+          <h2>2. Sua conta</h2>
+          <ul>
+            <li>Você é responsável por manter sua senha em segurança.</li>
+            <li>Cada pessoa pode ter apenas uma conta.</li>
+            <li>Nomes de usuário ofensivos podem ser alterados ou removidos.</li>
+          </ul>
+          <h2>3. Torneios</h2>
+          <ul>
+            <li>O organizador define as regras de cada torneio e é responsável por elas.</li>
+            <li>Resultados devem ser enviados de forma honesta. Resultados falsos podem levar à suspensão da conta.</li>
+            <li>Premiações oferecidas por organizadores da comunidade são de responsabilidade deles.</li>
+          </ul>
+          <h2>4. Conduta</h2>
+          <p>Não é permitido assédio, discurso de ódio, trapaça, uso de programas que dão vantagem indevida ou qualquer ação que prejudique outros jogadores.</p>
+          <h2>5. Mudanças</h2>
+          <p>Podemos atualizar estes termos. Avisaremos sobre mudanças importantes na página de <a href="novidades.html">Novidades</a>.</p>
+        </section>
+
+        <!-- ================= PRIVACIDADE ================= -->
+        <section class="texto-info" id="privacidade" data-titulo="Política de privacidade" hidden>
+          <h2>Quais dados coletamos</h2>
+          <p>Nome de usuário, nome, e-mail, guerreiro favorito, times, inscrições em torneios e resultados de partidas.</p>
+          <h2>Como usamos</h2>
+          <p>Para exibir seu perfil, organizar torneios, calcular o ranking e enviar avisos sobre suas partidas.</p>
+          <h2>Onde ficam guardados</h2>
+          <p>Nesta versão do projeto, todos os dados ficam salvos apenas no seu próprio navegador (localStorage). Nada é enviado para servidores. Você pode apagar tudo a qualquer momento em <a href="configuracoes.html">Configurações → Restaurar dados de exemplo</a> ou limpando os dados do navegador.</p>
+          <h2>Seus direitos (LGPD)</h2>
+          <p>Você pode pedir acesso, correção ou exclusão dos seus dados pelo <a href="info.html?p=suporte">Suporte ao jogador</a>.</p>
+        </section>
+
+        <!-- ================= SEGURANÇA ================= -->
+        <section class="texto-info" id="seguranca" data-titulo="Segurança" hidden>
+          <h2>Proteja sua conta</h2>
+          <ul>
+            <li>Use uma senha forte e que você não usa em outros sites.</li>
+            <li>Nunca compartilhe sua senha — nossa equipe nunca vai pedir por ela.</li>
+            <li>Desconfie de links de "premiação" enviados por desconhecidos.</li>
+          </ul>
+          <h2>Jogo limpo</h2>
+          <p>Trapaças e resultados falsos prejudicam toda a comunidade. Se suspeitar de algo, denuncie pelo <a href="info.html?p=suporte">Suporte</a> escolhendo o assunto "Denunciar jogador".</p>
+          <h2>Encontrou uma falha?</h2>
+          <p>Se você encontrou uma vulnerabilidade no site, avise pelo Suporte com o assunto "Problema no site". Agradecemos quem ajuda a manter a arena segura.</p>
+        </section>
+
+        <!-- ================= E-VERIFY ================= -->
+        <section class="texto-info" id="verificacao" data-titulo="E-Verify — verificação de conta" hidden>
+          <h2>O que é</h2>
+          <p>O E-Verify é o selo de conta verificada da Rivals Arena. Ele mostra que o jogador confirmou seu e-mail e sua identidade, o que dá mais confiança a organizadores de torneios com premiação.</p>
+          <h2>Quem precisa</h2>
+          <p>Torneios com premiação em dinheiro podem exigir que os vencedores tenham a conta verificada para receber o prêmio.</p>
+          <h2>Como solicitar</h2>
+          <p>A verificação automática chega junto com o servidor da plataforma. Por enquanto, solicite pelo <a href="info.html?p=suporte">Suporte</a> com o assunto "Minha conta".</p>
+        </section>
+
+        <!-- ================= JURÍDICO ================= -->
+        <section class="texto-info" id="juridico" data-titulo="Jurídico" hidden>
+          <h2>Propriedade intelectual</h2>
+          <p>A marca Rivals Arena, o jogo Bellator, logotipos, personagens e artes são de propriedade da equipe do projeto. Não é permitido usá-los comercialmente sem autorização.</p>
+          <h2>Conteúdo da comunidade</h2>
+          <p>Nomes de torneios, times e textos criados pelos usuários são de responsabilidade de quem os criou.</p>
+          <h2>Projeto acadêmico</h2>
+          <p>A Rivals Arena e o Bellator fazem parte de um Trabalho de Conclusão de Curso (TCC). Valores de premiação exibidos nos exemplos são fictícios.</p>
+        </section>
+
+        <!-- ================= IMPRENSA ================= -->
+        <section class="texto-info" id="imprensa" data-titulo="Imprensa" hidden>
+          <h2>Kit de imprensa</h2>
+          <p>Use os logotipos abaixo em matérias e divulgações sobre a Rivals Arena. Clique para baixar.</p>
+          <div class="grade-logos" style="margin-top:16px">
+            <a href="img/logo-rivals-arena-completa-com-a-palavra-em-branco-png.png" download><img src="img/logo-rivals-arena-completa-com-a-palavra-em-branco-png.png" alt="Logo completa branca">Logo completa (fundo escuro)</a>
+            <a href="img/logo-rivals-arena-completa-com-a-palavra-em-preto-png.png" download><img class="fundo-claro" src="img/logo-rivals-arena-completa-com-a-palavra-em-preto-png.png" alt="Logo completa preta">Logo completa (fundo claro)</a>
+            <a href="img/logo-rivals-arena-reduzida-RA-png.png" download><img src="img/logo-rivals-arena-reduzida-RA-png.png" alt="Símbolo RA">Símbolo RA</a>
+            <a href="img/logo-rivals-arena-reduzida-branca-png.png" download><img src="img/logo-rivals-arena-reduzida-branca-png.png" alt="Símbolo branco">Símbolo branco</a>
+            <a href="img/paletas.png" download><img src="img/paletas.png" alt="Paleta de cores">Paleta de cores</a>
+          </div>
+          <h2>Contato</h2>
+          <p>Para entrevistas e informações, use o <a href="info.html?p=suporte">formulário de suporte</a> com o assunto "Outro".</p>
+        </section>
+
+        <!-- ================= ACESSIBILIDADE ================= -->
+        <section class="texto-info" id="acessibilidade" data-titulo="Acessibilidade" hidden>
+          <h2>Nosso compromisso</h2>
+          <p>Queremos que todas as pessoas possam competir na Rivals Arena.</p>
+          <h2>O que já fazemos</h2>
+          <ul>
+            <li>Textos com bom contraste sobre o fundo escuro.</li>
+            <li>Navegação pelo teclado (Tab) em botões, links e formulários.</li>
+            <li>Textos alternativos nas imagens e rótulos nos campos de formulário.</li>
+            <li>Animações reduzidas para quem ativou "reduzir movimento" no sistema.</li>
+            <li>Layout que se adapta a celulares e tablets.</li>
+          </ul>
+          <h2>Encontrou uma barreira?</h2>
+          <p>Conte para a gente pelo <a href="info.html?p=suporte">Suporte</a>. Toda sugestão ajuda.</p>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<button id="backToTop" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<!-- ===================== RODAPÉ (igual em todas as páginas) ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="brand" href="index.html">
+        <img src="img/logo-rivals-arena-reduzida-RA-png.png" alt="">
+        <span>RIVALS ARENA</span>
+      </a>
+      <nav class="foot-legal-links">
+        <a href="info.html?p=imprensa">IMPRENSA</a>
+        <a href="info.html?p=seguranca">SEGURANÇA</a>
+        <a href="info.html?p=juridico">JURÍDICO</a>
+        <a href="info.html?p=termos">TERMOS DE SERVIÇO</a>
+        <a href="info.html?p=privacidade">POLÍTICA DE PRIVACIDADE</a>
+        <a href="info.html?p=suporte">SUPORTE AO JOGADOR</a>
+        <a href="info.html?p=verificacao">E-VERIFY</a>
+        <a href="info.html?p=acessibilidade">ACESSIBILIDADE</a>
+      </nav>
+      <div class="foot-social">
+        <a href="#" data-em-breve="Nosso canal no YouTube chega em breve!" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9.5v5l5-2.5-5-2.5Z" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" data-em-breve="Nosso Instagram chega em breve!" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" data-em-breve="Nosso TikTok chega em breve!" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46M14 4c0 2.2 1.8 4 4 4"/></svg></a>
+        <a href="#" data-em-breve="Nosso servidor no Discord abre em breve!" aria-label="Discord"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 7.5C9 6.5 11 6 12 6s3 .5 5 1.5c1.3 2 2 4.5 2 7.5-1.3 1-2.8 1.6-4 2l-.8-1.4c.7-.2 1.4-.5 2-1-.5.3-2.1 1-4.2 1s-3.7-.7-4.2-1c.6.5 1.3.8 2 1L7 17c-1.2-.4-2.7-1-4-2 0-3 .7-5.5 2-7.5Z"/><circle cx="9.5" cy="13" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="13" r="1" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Rivals Arena. Todos os Direitos Reservados</span>
+      <span>Mais que uma plataforma. É a sua arena.</span>
+      <a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">VOLTAR AO TOPO ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Ordem importa: dados -> banco -> comum -> script da página -->
+<script src="js/dados.js"></script>
+<script src="js/banco.js"></script>
+<script src="js/comum.js"></script>
+<script src="js/paginas/info.js"></script>
+</body>
+</html>

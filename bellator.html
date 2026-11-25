@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bellator — Rivals Arena</title>
+<meta name="description" content="Bellator: o jogo de combate no Coliseu. Guerreiros, modos de jogo e lançamento.">
+<link rel="icon" href="img/logo-rivals-arena-reduzida-RA-png.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/paginas.css">
+</head>
+<body class="pagina-interna">
+
+<!-- ===================== CABEÇALHO (igual em todas as páginas) ===================== -->
+<header id="siteHeader">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <img src="img/logo-rivals-arena-reduzida-RA-png.png" alt="">
+      <span>RIVALS ARENA</span>
+    </a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="torneios.html">Torneios</a>
+      <a href="partidas.html">Partidas</a>
+      <a href="ranking.html">Ranking</a>
+      <a href="times.html">Times</a>
+      <a href="bellator.html" class="active">Bellator</a>
+      <a href="jogar.html">Jogar</a>
+      <a href="novidades.html">Novidades</a>
+    </nav>
+    <div class="nav-cta">
+      <!-- Preenchido pelo js/comum.js: botão "Entrar" ou o menu do usuário logado -->
+      <div id="areaUsuario"></div>
+      <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="torneios.html">Torneios</a>
+    <a href="partidas.html">Partidas</a>
+    <a href="ranking.html">Ranking</a>
+    <a href="times.html">Times</a>
+    <a href="bellator.html">Bellator</a>
+      <a href="jogar.html">Jogar</a>
+    <a href="novidades.html">Novidades</a>
+  </nav>
+</header>
+
+<main style="padding-top:0">
+  <!-- ===================== HERO DO JOGO ===================== -->
+  <section class="hero-jogo arte arte-3">
+    <div class="wrap">
+      <p class="eyebrow">JOGO PRINCIPAL DA RIVALS ARENA</p>
+      <h1><img class="logo-bellator" src="img/bellator-logo.png" alt="Bellator" style="width:min(520px,90%)"></h1>
+      <p>Do latim, "aquele que guerreia". Uma experiência intensa no Coliseu, onde jogadores, equipes e estratégias definem quem será o sobrevivente.</p>
+      <div class="hero-actions" style="margin-top:26px">
+        <a class="btn btn-primary" href="jogar.html">▶ JOGAR AGORA</a>
+        <a class="btn btn-ghost" href="torneios.html">VER TORNEIOS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="section" id="sobre">
+    <div class="wrap community-grid">
+      <div class="reveal">
+        <p class="eyebrow">SOBRE O JOGO</p>
+        <h2>Gladiadores, estratégia e <span>glória</span></h2>
+        <p style="margin-top:18px">Bellator é um jogo de combate ambientado na Roma Antiga, inspirado nas lutas do Coliseu. Cada partida coloca jogadores e equipes frente a frente em arenas onde força, agilidade e trabalho em equipe decidem o vencedor.</p>
+        <p style="margin-top:14px">Feito em Unity 6, tem combate inspirado em Soulslike: atacar, esquivar, rolar e travar a mira no inimigo (Aim Lock). E já pode ser jogado direto no navegador, na página <a href="jogar.html" style="color:var(--orange)">Jogar</a>.</p>
+        <p style="margin-top:14px">O jogo nasceu como Projeto Integrador e hoje compete dentro da Rivals Arena: o hub que organiza os campeonatos, monta as equipes e acompanha o ranking — do primeiro combate à consagração na arena.</p>
+      </div>
+      <div class="numeros reveal">
+        <div class="numero laranja"><b>4</b><span>Guerreiros</span></div>
+        <div class="numero laranja"><b>2</b><span>Modos jogáveis</span></div>
+        <div class="numero"><b>Unity 6</b><span>Motor do jogo</span></div>
+        <div class="numero ouro"><b>Temp. I</b><span>Em andamento</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GUERREIROS ===================== -->
+  <section class="section" id="guerreiros" style="padding-top:0">
+    <div class="wrap">
+      <p class="eyebrow center">GUERREIROS</p>
+      <h2 class="center">Quatro estilos. <span>Uma só arena.</span></h2>
+      <p class="lede">Conheça os quatro combatentes. Você escolhe o seu na hora de entrar em cada partida.</p>
+      <div class="roster" id="roster">
+        <article class="card reveal" data-guerreiro="Secutor">
+          <span class="num">I</span>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L20 6 V12 C20 17 16.5 20.5 12 22 C7.5 20.5 4 17 4 12 V6 Z"/><path d="M12 6 V17"/></svg>
+          <h3>Secutor</h3>
+          <span class="epithet">O Escudo de Ferro</span>
+          <p class="flavor">Pesado e blindado. Avança devagar, mas nenhum golpe o derruba na primeira tentativa.</p>
+          <div class="stat"><span>FOR</span><div class="track"><div class="fill" style="width:88%; background:var(--red);"></div></div><span class="val">88</span></div>
+          <div class="stat"><span>AGI</span><div class="track"><div class="fill" style="width:28%; background:var(--orange);"></div></div><span class="val">28</span></div>
+          <div class="stat"><span>RES</span><div class="track"><div class="fill" style="width:95%; background:var(--gold);"></div></div><span class="val">95</span></div>
+        </article>
+        <article class="card reveal" data-guerreiro="Retiarius">
+          <span class="num">II</span>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4 L21 20 M3 20 L21 4"/><circle cx="12" cy="12" r="9"/></svg>
+          <h3>Retiarius</h3>
+          <span class="epithet">Sombra da Rede</span>
+          <p class="flavor">Faminto e rápido. Prende o oponente na rede e decide o combate em segundos.</p>
+          <div class="stat"><span>FOR</span><div class="track"><div class="fill" style="width:46%; background:var(--red);"></div></div><span class="val">46</span></div>
+          <div class="stat"><span>AGI</span><div class="track"><div class="fill" style="width:94%; background:var(--orange);"></div></div><span class="val">94</span></div>
+          <div class="stat"><span>RES</span><div class="track"><div class="fill" style="width:38%; background:var(--gold);"></div></div><span class="val">38</span></div>
+        </article>
+        <article class="card reveal" data-guerreiro="Sagittarius">
+          <span class="num">III</span>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 C4 11 9 4 19 3 C15 8 15 15 19 20"/><path d="M19 3 L21 1 M4 20 L21 20"/></svg>
+          <h3>Sagittarius</h3>
+          <span class="epithet">Vento de Aço</span>
+          <p class="flavor">Combate à distância com besta e flechas. Vence quem nunca deixa se aproximar.</p>
+          <div class="stat"><span>FOR</span><div class="track"><div class="fill" style="width:34%; background:var(--red);"></div></div><span class="val">34</span></div>
+          <div class="stat"><span>AGI</span><div class="track"><div class="fill" style="width:76%; background:var(--orange);"></div></div><span class="val">76</span></div>
+          <div class="stat"><span>RES</span><div class="track"><div class="fill" style="width:52%; background:var(--gold);"></div></div><span class="val">52</span></div>
+        </article>
+        <article class="card reveal" data-guerreiro="Dimachaerus">
+          <span class="num">IV</span>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3 L18 15 M18 3 L6 15"/><path d="M6 15 L4 21 M18 15 L20 21"/></svg>
+          <h3>Dimachaerus</h3>
+          <span class="epithet">Fúria Gêmea</span>
+          <p class="flavor">Duas lâminas, dano bruto. Compensa a resistência baixa com velocidade de ataque.</p>
+          <div class="stat"><span>FOR</span><div class="track"><div class="fill" style="width:90%; background:var(--red);"></div></div><span class="val">90</span></div>
+          <div class="stat"><span>AGI</span><div class="track"><div class="fill" style="width:60%; background:var(--orange);"></div></div><span class="val">60</span></div>
+          <div class="stat"><span>RES</span><div class="track"><div class="fill" style="width:30%; background:var(--gold);"></div></div><span class="val">30</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MODOS DE JOGO ===================== -->
+  <section class="section" id="modos" style="padding-top:0">
+    <div class="wrap">
+      <p class="eyebrow center">MODOS DE JOGO</p>
+      <h2 class="center">Escolha como <span>lutar</span></h2>
+      <div class="grade-modos">
+        <article class="cartao-modo reveal">
+          <div class="arte arte-2"><h3>Sobrevivência</h3></div>
+          <div class="corpo">
+            <p>Enfrente 5 ondas de gladiadores. Sobreviva a todas para vencer. <b style="color:#fff">Disponível agora.</b></p>
+            <a class="news-link" href="jogar.html" style="color:var(--red); font-size:.72rem; font-weight:700">JOGAR →</a>
+          </div>
+        </article>
+        <article class="cartao-modo reveal">
+          <div class="arte arte-5"><h3>Ondas infinitas</h3></div>
+          <div class="corpo">
+            <p>As ondas não param. Quanto mais você durar, mais alto fica no ranking da Rivals Arena. <b style="color:#fff">Disponível agora.</b></p>
+            <a class="news-link" href="ranking.html#bellator" style="color:var(--red); font-size:.72rem; font-weight:700">VER RANKING →</a>
+          </div>
+        </article>
+        <article class="cartao-modo reveal">
+          <div class="arte arte-6"><h3>Modos competitivos</h3></div>
+          <div class="corpo">
+            <p>Mata-Mata, Estandarte do Império e Fuga do Coliseu: os modos dos torneios da comunidade. <b style="color:#fff">Em breve dentro do jogo.</b></p>
+            <a class="news-link" href="torneios.html" style="color:var(--red); font-size:.72rem; font-weight:700">VER TORNEIOS →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DESENVOLVIMENTO ===================== -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <p class="eyebrow">ROADMAP</p>
+      <h2>Status do <span>desenvolvimento</span></h2>
+      <ol class="linha-do-tempo">
+        <li class="feito"><small>Concluído</small><b>Conceito e arte</b><p>Universo, guerreiros e identidade visual do Bellator.</p></li>
+        <li class="feito"><small>Concluído</small><b>Versão jogável</b><p>Publicada no itch.io: Sobrevivência e Ondas infinitas, no navegador.</p></li>
+        <li class="agora"><small>Em andamento</small><b>Integração com o site</b><p>Resultados do jogo enviados direto para o ranking da Rivals Arena.</p></li>
+        <li><small>Próximo</small><b>Modos competitivos</b><p>Partidas entre jogadores para os torneios da comunidade.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== NOVIDADES DO JOGO ===================== -->
+  <section class="section" id="lancamento" style="padding-top:0">
+    <div class="wrap">
+      <div class="plaque">
+        <img src="img/logo-rivals-arena-reduzida-RA-png.png" alt="">
+        <div style="flex:1">
+          <p class="eyebrow">NOVIDADES</p>
+          <h2>Receba as <span style="color:var(--orange)">atualizações</span></h2>
+          <p style="margin-bottom:18px">O Bellator está em desenvolvimento e já pode ser jogado no navegador. Deixe seu e-mail para saber quando chegarem novos modos, guerreiros e mapas.</p>
+          <form class="formulario-chat" id="formLancamento" novalidate>
+            <input type="email" id="emailLancamento" placeholder="seu@email.com" aria-label="Seu e-mail" required>
+            <button class="btn btn-primary btn-sm" type="submit">AVISE-ME</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<button id="backToTop" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<!-- ===================== RODAPÉ (igual em todas as páginas) ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="brand" href="index.html">
+        <img src="img/logo-rivals-arena-reduzida-RA-png.png" alt="">
+        <span>RIVALS ARENA</span>
+      </a>
+      <nav class="foot-legal-links">
+        <a href="info.html?p=imprensa">IMPRENSA</a>
+        <a href="info.html?p=seguranca">SEGURANÇA</a>
+        <a href="info.html?p=juridico">JURÍDICO</a>
+        <a href="info.html?p=termos">TERMOS DE SERVIÇO</a>
+        <a href="info.html?p=privacidade">POLÍTICA DE PRIVACIDADE</a>
+        <a href="info.html?p=suporte">SUPORTE AO JOGADOR</a>
+        <a href="info.html?p=verificacao">E-VERIFY</a>
+        <a href="info.html?p=acessibilidade">ACESSIBILIDADE</a>
+      </nav>
+      <div class="foot-social">
+        <a href="#" data-em-breve="Nosso canal no YouTube chega em breve!" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9.5v5l5-2.5-5-2.5Z" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" data-em-breve="Nosso Instagram chega em breve!" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" data-em-breve="Nosso TikTok chega em breve!" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46M14 4c0 2.2 1.8 4 4 4"/></svg></a>
+        <a href="#" data-em-breve="Nosso servidor no Discord abre em breve!" aria-label="Discord"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 7.5C9 6.5 11 6 12 6s3 .5 5 1.5c1.3 2 2 4.5 2 7.5-1.3 1-2.8 1.6-4 2l-.8-1.4c.7-.2 1.4-.5 2-1-.5.3-2.1 1-4.2 1s-3.7-.7-4.2-1c.6.5 1.3.8 2 1L7 17c-1.2-.4-2.7-1-4-2 0-3 .7-5.5 2-7.5Z"/><circle cx="9.5" cy="13" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="13" r="1" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Rivals Arena. Todos os Direitos Reservados</span>
+      <span>Mais que uma plataforma. É a sua arena.</span>
+      <a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">VOLTAR AO TOPO ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Ordem importa: dados -> banco -> comum -> script da página -->
+<script src="js/dados.js"></script>
+<script src="js/banco.js"></script>
+<script src="js/comum.js"></script>
+<script src="js/paginas/bellator.js"></script>
+</body>
+</html>
