@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1190" height="720" viewBox="50 10 1190 720" font-family="Helvetica, Arial, sans-serif">
+<rect x="50" y="10" width="1190" height="720" fill="#ffffff"/>
+<line x1="710" y1="95" x2="825" y2="60" stroke="#000" stroke-width="1"/>
+<text x="722" y="88" font-size="12" fill="#000">1</text>
+<line x1="945" y1="60" x2="1060" y2="95" stroke="#000" stroke-width="1"/>
+<text x="1040" y="80" font-size="12" fill="#000">N</text>
+<line x1="710" y1="120" x2="825" y2="175" stroke="#000" stroke-width="1"/>
+<text x="722" y="142" font-size="12" fill="#000">N</text>
+<line x1="945" y1="175" x2="1060" y2="120" stroke="#000" stroke-width="1"/>
+<text x="1040" y="150" font-size="12" fill="#000">N</text>
+<line x1="635" y1="130" x2="635" y2="245" stroke="#000" stroke-width="1"/>
+<text x="643" y="150" font-size="12" fill="#000">1</text>
+<line x1="635" y1="305" x2="635" y2="420" stroke="#000" stroke-width="1"/>
+<text x="643" y="410" font-size="12" fill="#000">N</text>
+<line x1="560" y1="115" x2="430" y2="250" stroke="#000" stroke-width="1"/>
+<text x="535" y="135" font-size="12" fill="#000">1</text>
+<line x1="310" y1="250" x2="230" y2="420" stroke="#000" stroke-width="1"/>
+<text x="240" y="410" font-size="12" fill="#000">N</text>
+<line x1="155" y1="130" x2="155" y2="240" stroke="#000" stroke-width="1"/>
+<text x="163" y="150" font-size="12" fill="#000">1</text>
+<line x1="155" y1="300" x2="155" y2="420" stroke="#000" stroke-width="1"/>
+<text x="163" y="410" font-size="12" fill="#000">N</text>
+<line x1="710" y1="445" x2="825" y2="445" stroke="#000" stroke-width="1"/>
+<text x="720" y="438" font-size="12" fill="#000">1</text>
+<line x1="945" y1="445" x2="1060" y2="445" stroke="#000" stroke-width="1"/>
+<text x="1042" y="438" font-size="12" fill="#000">N</text>
+<line x1="1135" y1="130" x2="1135" y2="245" stroke="#000" stroke-width="1"/>
+<text x="1143" y="150" font-size="12" fill="#000">1</text>
+<line x1="1135" y1="305" x2="1135" y2="420" stroke="#000" stroke-width="1"/>
+<text x="1143" y="410" font-size="12" fill="#000">N</text>
+<line x1="700" y1="130" x2="825" y2="330" stroke="#000" stroke-width="1"/>
+<text x="705" y="160" font-size="12" fill="#000">1</text>
+<line x1="945" y1="330" x2="1085" y2="420" stroke="#000" stroke-width="1"/>
+<text x="1062" y="398" font-size="12" fill="#000">N</text>
+<line x1="635" y1="470" x2="635" y2="535" stroke="#000" stroke-width="1"/>
+<text x="643" y="490" font-size="12" fill="#000">1</text>
+<line x1="635" y1="595" x2="810" y2="665" stroke="#000" stroke-width="1"/>
+<text x="790" y="650" font-size="12" fill="#000">N</text>
+<line x1="1135" y1="470" x2="1135" y2="535" stroke="#000" stroke-width="1"/>
+<text x="1143" y="490" font-size="12" fill="#000">1</text>
+<line x1="1135" y1="595" x2="960" y2="665" stroke="#000" stroke-width="1"/>
+<text x="968" y="650" font-size="12" fill="#000">N</text>
+<rect x="80" y="80" width="150" height="50" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+<text x="155" y="110" font-size="13" font-weight="700" text-anchor="middle" fill="#000">GUERREIRO</text>
+<rect x="560" y="80" width="150" height="50" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+<text x="635" y="110" font-size="13" font-weight="700" text-anchor="middle" fill="#000">JOGADOR</text>
+<rect x="1060" y="80" width="150" height="50" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+<text x="1135" y="110" font-size="13" font-weight="700" text-anchor="middle" fill="#000">EQUIPE</text>
+<rect x="80" y="420" width="150" height="50" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+<text x="155" y="450" font-size="13" font-weight="700" text-anchor="middle" fill="#000">RESULTADO DO JOGO</text>
+<rect x="560" y="420" width="150" height="50" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+<text x="635" y="450" font-size="13" font-weight="700" text-anchor="middle" fill="#000">TORNEIO</text>
+<rect x="1060" y="420" width="150" height="50" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+<text x="1135" y="450" font-size="13" font-weight="700" text-anchor="middle" fill="#000">INSCRIÇÃO</text>
+<rect x="810" y="640" width="150" height="50" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+<text x="885" y="670" font-size="13" font-weight="700" text-anchor="middle" fill="#000">PARTIDA</text>
+<polygon points="825,60 885,30 945,60 885,90" fill="#fff2cc" stroke="#d6b656" stroke-width="1"/>
+<text x="885" y="64" font-size="12" text-anchor="middle" fill="#000">lidera</text>
+<polygon points="825,175 885,145 945,175 885,205" fill="#fff2cc" stroke="#d6b656" stroke-width="1"/>
+<text x="885" y="179" font-size="12" text-anchor="middle" fill="#000">participa</text>
+<polygon points="575,275 635,245 695,275 635,305" fill="#fff2cc" stroke="#d6b656" stroke-width="1"/>
+<text x="635" y="279" font-size="12" text-anchor="middle" fill="#000">organiza</text>
+<polygon points="310,250 370,220 430,250 370,280" fill="#fff2cc" stroke="#d6b656" stroke-width="1"/>
+<text x="370" y="254" font-size="12" text-anchor="middle" fill="#000">registra</text>
+<polygon points="95,270 155,240 215,270 155,300" fill="#fff2cc" stroke="#d6b656" stroke-width="1"/>
+<text x="155" y="274" font-size="12" text-anchor="middle" fill="#000">usa</text>
+<polygon points="825,445 885,415 945,445 885,475" fill="#fff2cc" stroke="#d6b656" stroke-width="1"/>
+<text x="885" y="449" font-size="12" text-anchor="middle" fill="#000">recebe</text>
+<polygon points="1075,275 1135,245 1195,275 1135,305" fill="#fff2cc" stroke="#d6b656" stroke-width="1"/>
+<text x="1135" y="279" font-size="12" text-anchor="middle" fill="#000">se inscreve</text>
+<polygon points="825,330 885,300 945,330 885,360" fill="#fff2cc" stroke="#d6b656" stroke-width="1"/>
+<text x="885" y="334" font-size="12" text-anchor="middle" fill="#000">se inscreve</text>
+<polygon points="575,565 635,535 695,565 635,595" fill="#fff2cc" stroke="#d6b656" stroke-width="1"/>
+<text x="635" y="569" font-size="12" text-anchor="middle" fill="#000">contém</text>
+<polygon points="1075,565 1135,535 1195,565 1135,595" fill="#fff2cc" stroke="#d6b656" stroke-width="1"/>
+<text x="1135" y="569" font-size="12" text-anchor="middle" fill="#000">disputa</text>
+</svg>
