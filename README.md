@@ -95,14 +95,16 @@ Toda a modelagem está na pasta [`documentacao/`](documentacao/):
 |---|---|
 | [Modelagem conceitual](documentacao/01-modelagem-conceitual.md) | Entidades, relacionamentos, cardinalidades e regras de negócio |
 | [Modelagem lógica](documentacao/02-modelagem-logica.md) | Esquema relacional, dicionário de dados, decisões e normalização (3FN) |
-| [DER](documentacao/03-DER.md) | Diagrama Entidade-Relacionamento com todas as tabelas, PKs e FKs |
+| [DER](documentacao/03-DER.md) | Diagrama Entidade-Relacionamento: versão simplificada (tabelas principais) e versão completa |
 
 **Tabelas (14):** `guerreiro`, `jogador`, `equipe`, `equipe_membro`, `torneio`, `inscricao`,
 `partida`, `partida_guerreiro`, `mensagem_partida`, `resultado_jogo`, `notificacao`, `noticia`,
 `chamado_suporte`, `interessado`. **Visões:** `vw_ranking_jogadores`, `vw_ranking_equipes`,
 `vw_ranking_jogo`.
 
-![DER](documentacao/DER.png)
+![DER simplificado](documentacao/DER-simplificado.png)
+
+*Versão simplificada. O DER completo, com todas as 14 tabelas, está em [`documentacao/03-DER.md`](documentacao/03-DER.md).*
 
 > **Observação:** nesta versão, sem servidor, o site salva os dados no navegador (`localStorage`),
 > com a mesma estrutura do modelo: cada tabela corresponde a uma lista do objeto `banco` em
