@@ -285,9 +285,12 @@ a.cartao-partida:hover{ border-color:var(--orange); }
 .linha-partida .status-coluna{ text-align:right; }
 /* Quando a lista é estreita (coluna ou celular), a linha quebra em 2 andares */
 @container (max-width:680px){
-  .linha-partida{ grid-template-columns:1fr auto 1fr; row-gap:10px; }
+  .linha-partida{ grid-template-columns:1fr auto 1fr; row-gap:10px; padding:14px; }
   .linha-partida .quando{ grid-column:1 / 3; }
   .linha-partida .status-coluna{ grid-column:3; grid-row:1; }
+  /* no espaço estreito o nome quebra em 2 linhas em vez de ser cortado */
+  .linha-partida .lado span:last-child{ white-space:normal; overflow-wrap:anywhere; font-size:.82rem; line-height:1.2; }
+  .linha-partida .placar-central{ min-width:52px; font-size:1.05rem; }
 }
 
 
@@ -510,4 +513,40 @@ dialog .acoes-dialog{ display:flex; justify-content:flex-end; gap:10px; margin-t
   .banner-torneio{ padding:22px; }
   .placar-grande{ grid-template-columns:1fr; }
   .caixa{ padding:18px; }
+}
+
+
+/* =====================================================================
+   AJUSTES PARA CELULAR
+   ===================================================================== */
+
+/* Jogo em tela cheia "de mentira": usado quando o navegador não deixa
+   usar a tela cheia de verdade (ex.: Safari do iPhone) */
+.tela-jogo.tela-cheia{ position:fixed; inset:0; z-index:1000; width:100vw; height:100vh; height:100dvh; aspect-ratio:auto; border-radius:0; border:0; }
+.botao-sair-tela-cheia{ display:none; position:absolute; top:8px; right:8px; z-index:2; background:rgba(0,0,0,.7); color:#fff; border:1px solid var(--line-2); border-radius:999px; padding:8px 14px; font-family:var(--head); font-size:.75rem; cursor:pointer; }
+.tela-jogo.tela-cheia .botao-sair-tela-cheia, .tela-jogo:fullscreen .botao-sair-tela-cheia{ display:block; }
+.aviso-celular{ display:none; margin-top:12px; padding:12px 14px; border-radius:12px; background:rgba(249,123,46,.1); border:1px solid rgba(249,123,46,.4); color:#fff; font-size:.85rem; }
+@media (pointer:coarse){ .aviso-celular{ display:block; } }
+
+@media (max-width:640px){
+  /* menus do cabeçalho (notificações e usuário) ocupam a largura da tela */
+  .menu-suspenso-caixa, .menu-suspenso-caixa.largo{ position:fixed; top:72px; left:12px; right:12px; width:auto; min-width:0; }
+
+  /* textos que ficavam pequenos demais para ler */
+  .pilula, .badge, .etiqueta, .status, .selo{ font-size:.7rem; }
+  .news-date, .mini-tourney-list .ti-meta, .mini-tourney-list .ti-count, .mini-panel-head a, .cartao-partida .info-partida,
+  .linha-partida .placar-central small, .tabela th, .numero span, .stat span:first-child,
+  .lista-notificacoes small, .foot-legal-links a, .celula-nome small{ font-size:.72rem; }
+
+  /* botões e links grandes o suficiente para o dedo */
+  .chip, .abas button, .btn-sm{ min-height:40px; }
+  .link-simples{ padding:8px 0; }
+  .foot-legal-links a{ display:inline-block; padding:6px 0; }
+  .foot-social a{ width:42px; height:42px; }
+}
+
+/* Celular deitado (tela baixa): o cabeçalho não fica preso no topo,
+   senão ele cobre o jogo e o conteúdo */
+@media (max-height:500px){
+  header{ position:absolute; }
 }

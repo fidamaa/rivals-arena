@@ -33,13 +33,16 @@ const partidaVinculada = buscarPartida(parametroDaUrl('partida'));
 
 
 /* ---------------- Carregar o jogo ---------------- */
+// Celular ou tablet (tela de toque)?
+const ehCelular = window.matchMedia('(pointer: coarse)').matches;
+
 function carregarJogo() {
   if (janelaDoJogo) return;
   janelaDoJogo = document.createElement('iframe');
   janelaDoJogo.src = ENDERECO_DO_JOGO;
   janelaDoJogo.title = 'Bellator';
   janelaDoJogo.setAttribute('allow', 'autoplay; fullscreen *; gamepad');
-  telaJogo.innerHTML = '';
+  document.getElementById('capaJogo').remove();   // tira a capa e coloca o jogo no lugar
   telaJogo.appendChild(janelaDoJogo);
   mostrarStatus('Carregando o jogo... (pode demorar na primeira vez)', '');
 
@@ -52,12 +55,38 @@ function carregarJogo() {
   }, 40000);
 }
 
-document.getElementById('botaoJogar').addEventListener('click', carregarJogo);
+/* Tela cheia:
+   1) tenta a tela cheia de verdade do navegador e, no celular, deitar a tela;
+   2) se o navegador não deixar (ex.: iPhone), usa a classe .tela-cheia,
+      que estica o jogo por cima da página inteira. */
+function entrarEmTelaCheia() {
+  if (telaJogo.requestFullscreen) {
+    telaJogo.requestFullscreen().then(function () {
+      if (screen.orientation && screen.orientation.lock) screen.orientation.lock('landscape').catch(function () {});
+    }).catch(function () {
+      telaJogo.classList.add('tela-cheia');
+    });
+  } else {
+    telaJogo.classList.add('tela-cheia');
+  }
+}
+
+function sairDaTelaCheia() {
+  telaJogo.classList.remove('tela-cheia');
+  if (document.fullscreenElement) document.exitFullscreen();
+}
+
+document.getElementById('botaoJogar').addEventListener('click', function () {
+  carregarJogo();
+  if (ehCelular) entrarEmTelaCheia();   // no celular o jogo já abre ocupando a tela toda
+});
 
 document.getElementById('botaoTelaCheia').addEventListener('click', function () {
   carregarJogo();
-  if (telaJogo.requestFullscreen) telaJogo.requestFullscreen();
+  entrarEmTelaCheia();
 });
+
+document.getElementById('botaoSairTelaCheia').addEventListener('click', sairDaTelaCheia);
 
 // Abre direto se veio de uma partida (jogar.html?partida=...&iniciar=1)
 if (parametroDaUrl('iniciar')) carregarJogo();
