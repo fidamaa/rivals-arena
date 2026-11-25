@@ -2,8 +2,8 @@
 
 > **Onde a rivalidade começa.** Plataforma de competições do jogo **Bellator**.
 
-🔗 **Site publicado:** **https://fidamaa.github.io/rivals-arena/**
-🎮 **Jogo Bellator (itch.io):** https://dedechi.itch.io/bellator
+**Site publicado:** https://fidamaa.github.io/rivals-arena/
+**Jogo Bellator (itch.io):** https://dedechi.itch.io/bellator
 
 Para testar sem criar conta, clique em **Entrar → Entrar com conta de demonstração**.
 

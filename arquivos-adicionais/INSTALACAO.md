@@ -90,7 +90,7 @@ mysql -u root -p < arquivos-adicionais/sql/03_consultas_exemplo.sql
 ```
 
 **Pelo MySQL Workbench:** *File → Open SQL Script*, abra o `01_criacao_banco.sql`, clique no
-raio ⚡ (*Execute*). Depois faça o mesmo com o `02` e o `03`.
+raio (*Execute*). Depois faça o mesmo com o `02` e o `03`.
 
 **Conferência:** no fim do script 02 aparece uma tabela com a quantidade de linhas:
 jogador 16, equipe 6, torneio 6, inscricao 30, partida 20, resultado_jogo 8, noticia 6.

@@ -1,148 +1,141 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" font-family="Segoe UI, Arial, sans-serif">
-<rect width="100%" height="100%" fill="#ffffff"/>
-<path d="M170,176 V330" fill="none" stroke="#333" stroke-width="1.6"/>
-<text x="178" y="196" font-size="15" font-weight="700" fill="#b91c1c">1</text>
-<text x="178" y="322" font-size="15" font-weight="700" fill="#b91c1c">N</text>
-<text x="186" y="258" font-size="12.5" font-style="italic" fill="#555" text-anchor="start">usado em</text>
-<path d="M500,190 H390 V400 H280" fill="none" stroke="#333" stroke-width="1.6"/>
-<text x="486" y="183" font-size="15" font-weight="700" fill="#b91c1c">1</text>
-<text x="292" y="393" font-size="15" font-weight="700" fill="#b91c1c">N</text>
-<text x="398" y="300" font-size="12.5" font-style="italic" fill="#555" text-anchor="start">joga</text>
-<path d="M750,110 H1080" fill="none" stroke="#333" stroke-width="1.6"/>
-<text x="760" y="103" font-size="15" font-weight="700" fill="#b91c1c">1</text>
-<text x="1062" y="103" font-size="15" font-weight="700" fill="#b91c1c">N</text>
-<text x="870" y="103" font-size="12.5" font-style="italic" fill="#555" text-anchor="start">é capitão de</text>
-<path d="M750,190 H785 V296 H820" fill="none" stroke="#333" stroke-width="1.6"/>
-<text x="760" y="183" font-size="15" font-weight="700" fill="#b91c1c">1</text>
-<text x="806" y="289" font-size="15" font-weight="700" fill="#b91c1c">N</text>
-<text x="792" y="238" font-size="12.5" font-style="italic" fill="#555" text-anchor="start">participa</text>
-<path d="M1020,296 H1200 V200" fill="none" stroke="#333" stroke-width="1.6"/>
-<text x="1208" y="220" font-size="15" font-weight="700" fill="#b91c1c">1</text>
-<text x="1028" y="289" font-size="15" font-weight="700" fill="#b91c1c">N</text>
-<text x="1090" y="288" font-size="12.5" font-style="italic" fill="#555" text-anchor="start">tem membros</text>
-<path d="M625,224 V440" fill="none" stroke="#333" stroke-width="1.6"/>
-<text x="633" y="244" font-size="15" font-weight="700" fill="#b91c1c">1</text>
-<text x="633" y="432" font-size="15" font-weight="700" fill="#b91c1c">N</text>
-<text x="633" y="336" font-size="12.5" font-style="italic" fill="#555" text-anchor="start">organiza</text>
-<path d="M750,500 H1080" fill="none" stroke="#333" stroke-width="1.6"/>
-<text x="760" y="493" font-size="15" font-weight="700" fill="#b91c1c">1</text>
-<text x="1062" y="493" font-size="15" font-weight="700" fill="#b91c1c">N</text>
-<text x="890" y="493" font-size="12.5" font-style="italic" fill="#555" text-anchor="start">recebe</text>
-<path d="M700,224 V380 H1140 V440" fill="none" stroke="#333" stroke-width="1.6"/>
-<text x="708" y="244" font-size="15" font-weight="700" fill="#b91c1c">1</text>
-<text x="1148" y="432" font-size="15" font-weight="700" fill="#b91c1c">N</text>
-<text x="850" y="372" font-size="12.5" font-style="italic" fill="#555" text-anchor="start">inscreve-se (1v1)</text>
-<path d="M1280,200 V440" fill="none" stroke="#333" stroke-width="1.6"/>
-<text x="1288" y="220" font-size="15" font-weight="700" fill="#b91c1c">1</text>
-<text x="1288" y="432" font-size="15" font-weight="700" fill="#b91c1c">N</text>
-<text x="1272" y="345" font-size="12.5" font-style="italic" fill="#555" text-anchor="end">inscreve-se (equipes)</text>
-<path d="M625,604 V790 H780" fill="none" stroke="#333" stroke-width="1.6"/>
-<text x="633" y="624" font-size="15" font-weight="700" fill="#b91c1c">1</text>
-<text x="764" y="783" font-size="15" font-weight="700" fill="#b91c1c">N</text>
-<text x="633" y="700" font-size="12.5" font-style="italic" fill="#555" text-anchor="start">contém</text>
-<path d="M1200,580 V790 H1040" fill="none" stroke="#333" stroke-width="1.6"/>
-<text x="1208" y="600" font-size="15" font-weight="700" fill="#b91c1c">1</text>
-<text x="1048" y="783" font-size="15" font-weight="700" fill="#b91c1c">N</text>
-<text x="1208" y="690" font-size="12.5" font-style="italic" fill="#555" text-anchor="start">disputa (lado A / B)</text>
-<rect x="60" y="60" width="220" height="116" fill="#fffdf8" stroke="#9a3412" stroke-width="1.6"/>
-<rect x="60" y="60" width="220" height="34" fill="#fed7aa" stroke="#9a3412" stroke-width="1.6"/>
-<text x="170.0" y="82" font-size="15" font-weight="700" text-anchor="middle" fill="#1f1f1f">GUERREIRO</text>
-<text x="70" y="112" font-size="11" font-weight="700" fill="#9a3412">PK</text>
-<text x="122" y="112" font-size="14" fill="#222" text-decoration="underline">id_guerreiro</text>
-<text x="70" y="136" font-size="11" font-weight="700" fill="#999"></text>
-<text x="122" y="136" font-size="14" fill="#222">nome</text>
-<text x="70" y="160" font-size="11" font-weight="700" fill="#999"></text>
-<text x="122" y="160" font-size="14" fill="#222">apelido</text>
-<rect x="500" y="60" width="250" height="164" fill="#fffdf8" stroke="#9a3412" stroke-width="1.6"/>
-<rect x="500" y="60" width="250" height="34" fill="#fed7aa" stroke="#9a3412" stroke-width="1.6"/>
-<text x="625.0" y="82" font-size="15" font-weight="700" text-anchor="middle" fill="#1f1f1f">JOGADOR</text>
-<text x="510" y="112" font-size="11" font-weight="700" fill="#9a3412">PK</text>
-<text x="562" y="112" font-size="14" fill="#222" text-decoration="underline">id_jogador</text>
-<text x="510" y="136" font-size="11" font-weight="700" fill="#999"></text>
-<text x="562" y="136" font-size="14" fill="#222">usuario</text>
-<text x="510" y="160" font-size="11" font-weight="700" fill="#999"></text>
-<text x="562" y="160" font-size="14" fill="#222">email</text>
-<text x="510" y="184" font-size="11" font-weight="700" fill="#999"></text>
-<text x="562" y="184" font-size="14" fill="#222">senha</text>
-<text x="510" y="208" font-size="11" font-weight="700" fill="#999"></text>
-<text x="562" y="208" font-size="14" fill="#222">pontos</text>
-<rect x="1080" y="60" width="240" height="140" fill="#fffdf8" stroke="#9a3412" stroke-width="1.6"/>
-<rect x="1080" y="60" width="240" height="34" fill="#fed7aa" stroke="#9a3412" stroke-width="1.6"/>
-<text x="1200.0" y="82" font-size="15" font-weight="700" text-anchor="middle" fill="#1f1f1f">EQUIPE</text>
-<text x="1090" y="112" font-size="11" font-weight="700" fill="#9a3412">PK</text>
-<text x="1142" y="112" font-size="14" fill="#222" text-decoration="underline">id_equipe</text>
-<text x="1090" y="136" font-size="11" font-weight="700" fill="#999"></text>
-<text x="1142" y="136" font-size="14" fill="#222">nome</text>
-<text x="1090" y="160" font-size="11" font-weight="700" fill="#999"></text>
-<text x="1142" y="160" font-size="14" fill="#222">tag</text>
-<text x="1090" y="184" font-size="11" font-weight="700" fill="#1d4ed8">FK</text>
-<text x="1142" y="184" font-size="14" fill="#222">id_capitao</text>
-<rect x="820" y="250" width="200" height="92" fill="#fffdf8" stroke="#9a3412" stroke-width="1.6"/>
-<rect x="820" y="250" width="200" height="34" fill="#fed7aa" stroke="#9a3412" stroke-width="1.6"/>
-<text x="920.0" y="272" font-size="15" font-weight="700" text-anchor="middle" fill="#1f1f1f">EQUIPE_MEMBRO</text>
-<text x="830" y="302" font-size="11" font-weight="700" fill="#9a3412">PK FK</text>
-<text x="882" y="302" font-size="14" fill="#222" text-decoration="underline">id_equipe</text>
-<text x="830" y="326" font-size="11" font-weight="700" fill="#9a3412">PK FK</text>
-<text x="882" y="326" font-size="14" fill="#222" text-decoration="underline">id_jogador</text>
-<rect x="60" y="330" width="220" height="188" fill="#fffdf8" stroke="#9a3412" stroke-width="1.6"/>
-<rect x="60" y="330" width="220" height="34" fill="#fed7aa" stroke="#9a3412" stroke-width="1.6"/>
-<text x="170.0" y="352" font-size="15" font-weight="700" text-anchor="middle" fill="#1f1f1f">RESULTADO_JOGO</text>
-<text x="70" y="382" font-size="11" font-weight="700" fill="#9a3412">PK</text>
-<text x="122" y="382" font-size="14" fill="#222" text-decoration="underline">id_resultado</text>
-<text x="70" y="406" font-size="11" font-weight="700" fill="#1d4ed8">FK</text>
-<text x="122" y="406" font-size="14" fill="#222">id_jogador</text>
-<text x="70" y="430" font-size="11" font-weight="700" fill="#1d4ed8">FK</text>
-<text x="122" y="430" font-size="14" fill="#222">id_guerreiro</text>
-<text x="70" y="454" font-size="11" font-weight="700" fill="#999"></text>
-<text x="122" y="454" font-size="14" fill="#222">modo</text>
-<text x="70" y="478" font-size="11" font-weight="700" fill="#999"></text>
-<text x="122" y="478" font-size="14" fill="#222">ondas</text>
-<text x="70" y="502" font-size="11" font-weight="700" fill="#999"></text>
-<text x="122" y="502" font-size="14" fill="#222">pontos</text>
-<rect x="500" y="440" width="250" height="164" fill="#fffdf8" stroke="#9a3412" stroke-width="1.6"/>
-<rect x="500" y="440" width="250" height="34" fill="#fed7aa" stroke="#9a3412" stroke-width="1.6"/>
-<text x="625.0" y="462" font-size="15" font-weight="700" text-anchor="middle" fill="#1f1f1f">TORNEIO</text>
-<text x="510" y="492" font-size="11" font-weight="700" fill="#9a3412">PK</text>
-<text x="562" y="492" font-size="14" fill="#222" text-decoration="underline">id_torneio</text>
-<text x="510" y="516" font-size="11" font-weight="700" fill="#999"></text>
-<text x="562" y="516" font-size="14" fill="#222">nome</text>
-<text x="510" y="540" font-size="11" font-weight="700" fill="#999"></text>
-<text x="562" y="540" font-size="14" fill="#222">modo</text>
-<text x="510" y="564" font-size="11" font-weight="700" fill="#999"></text>
-<text x="562" y="564" font-size="14" fill="#222">status</text>
-<text x="510" y="588" font-size="11" font-weight="700" fill="#1d4ed8">FK</text>
-<text x="562" y="588" font-size="14" fill="#222">id_organizador</text>
-<rect x="1080" y="440" width="240" height="140" fill="#fffdf8" stroke="#9a3412" stroke-width="1.6"/>
-<rect x="1080" y="440" width="240" height="34" fill="#fed7aa" stroke="#9a3412" stroke-width="1.6"/>
-<text x="1200.0" y="462" font-size="15" font-weight="700" text-anchor="middle" fill="#1f1f1f">INSCRICAO</text>
-<text x="1090" y="492" font-size="11" font-weight="700" fill="#9a3412">PK</text>
-<text x="1142" y="492" font-size="14" fill="#222" text-decoration="underline">id_inscricao</text>
-<text x="1090" y="516" font-size="11" font-weight="700" fill="#1d4ed8">FK</text>
-<text x="1142" y="516" font-size="14" fill="#222">id_torneio</text>
-<text x="1090" y="540" font-size="11" font-weight="700" fill="#1d4ed8">FK</text>
-<text x="1142" y="540" font-size="14" fill="#222">id_jogador</text>
-<text x="1090" y="564" font-size="11" font-weight="700" fill="#1d4ed8">FK</text>
-<text x="1142" y="564" font-size="14" fill="#222">id_equipe</text>
-<rect x="780" y="700" width="260" height="188" fill="#fffdf8" stroke="#9a3412" stroke-width="1.6"/>
-<rect x="780" y="700" width="260" height="34" fill="#fed7aa" stroke="#9a3412" stroke-width="1.6"/>
-<text x="910.0" y="722" font-size="15" font-weight="700" text-anchor="middle" fill="#1f1f1f">PARTIDA</text>
-<text x="790" y="752" font-size="11" font-weight="700" fill="#9a3412">PK</text>
-<text x="842" y="752" font-size="14" fill="#222" text-decoration="underline">id_partida</text>
-<text x="790" y="776" font-size="11" font-weight="700" fill="#1d4ed8">FK</text>
-<text x="842" y="776" font-size="14" fill="#222">id_torneio</text>
-<text x="790" y="800" font-size="11" font-weight="700" fill="#1d4ed8">FK</text>
-<text x="842" y="800" font-size="14" fill="#222">id_inscricao_a</text>
-<text x="790" y="824" font-size="11" font-weight="700" fill="#1d4ed8">FK</text>
-<text x="842" y="824" font-size="14" fill="#222">id_inscricao_b</text>
-<text x="790" y="848" font-size="11" font-weight="700" fill="#999"></text>
-<text x="842" y="848" font-size="14" fill="#222">placar_a</text>
-<text x="790" y="872" font-size="11" font-weight="700" fill="#999"></text>
-<text x="842" y="872" font-size="14" fill="#222">placar_b</text>
-<text x="60" y="790" font-size="22" font-weight="700" fill="#1f1f1f">DER — Rivals Arena</text>
-<text x="60" y="815" font-size="14" fill="#555">Versão simplificada (tabelas principais)</text>
-<text x="60" y="850" font-size="13" fill="#9a3412" font-weight="700">PK</text><text x="90" y="850" font-size="13" fill="#333">= chave primária</text>
-<text x="60" y="872" font-size="13" fill="#1d4ed8" font-weight="700">FK</text><text x="90" y="872" font-size="13" fill="#333">= chave estrangeira</text>
-<text x="60" y="894" font-size="13" fill="#b91c1c" font-weight="700">1 / N</text><text x="105" y="894" font-size="13" fill="#333">= cardinalidade (um / muitos)</text>
-<text x="60" y="930" font-size="12" fill="#777">Não mostradas: partida_guerreiro, mensagem_partida, notificacao,</text>
-<text x="60" y="948" font-size="12" fill="#777">noticia, chamado_suporte e interessado (ver DER completo).</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="880" viewBox="30 30 1320 880" font-family="Helvetica, Arial, sans-serif">
+<rect x="30" y="30" width="1320" height="880" fill="#ffffff"/>
+<path d="M170,176 V330" fill="none" stroke="#000" stroke-width="1"/>
+<text x="178" y="196" font-size="12" fill="#000">1</text>
+<text x="178" y="322" font-size="12" fill="#000">N</text>
+<text x="186" y="258" font-size="11" fill="#000" text-anchor="start">usado em</text>
+<path d="M500,190 H390 V400 H280" fill="none" stroke="#000" stroke-width="1"/>
+<text x="486" y="183" font-size="12" fill="#000">1</text>
+<text x="292" y="393" font-size="12" fill="#000">N</text>
+<text x="398" y="300" font-size="11" fill="#000" text-anchor="start">joga</text>
+<path d="M750,110 H1080" fill="none" stroke="#000" stroke-width="1"/>
+<text x="760" y="103" font-size="12" fill="#000">1</text>
+<text x="1062" y="103" font-size="12" fill="#000">N</text>
+<text x="870" y="103" font-size="11" fill="#000" text-anchor="start">é capitão de</text>
+<path d="M750,190 H785 V296 H820" fill="none" stroke="#000" stroke-width="1"/>
+<text x="760" y="183" font-size="12" fill="#000">1</text>
+<text x="806" y="289" font-size="12" fill="#000">N</text>
+<text x="792" y="238" font-size="11" fill="#000" text-anchor="start">participa</text>
+<path d="M1020,296 H1200 V200" fill="none" stroke="#000" stroke-width="1"/>
+<text x="1208" y="220" font-size="12" fill="#000">1</text>
+<text x="1028" y="289" font-size="12" fill="#000">N</text>
+<text x="1090" y="288" font-size="11" fill="#000" text-anchor="start">tem membros</text>
+<path d="M625,224 V440" fill="none" stroke="#000" stroke-width="1"/>
+<text x="633" y="244" font-size="12" fill="#000">1</text>
+<text x="633" y="432" font-size="12" fill="#000">N</text>
+<text x="633" y="336" font-size="11" fill="#000" text-anchor="start">organiza</text>
+<path d="M750,500 H1080" fill="none" stroke="#000" stroke-width="1"/>
+<text x="760" y="493" font-size="12" fill="#000">1</text>
+<text x="1062" y="493" font-size="12" fill="#000">N</text>
+<text x="890" y="493" font-size="11" fill="#000" text-anchor="start">recebe</text>
+<path d="M700,224 V380 H1140 V440" fill="none" stroke="#000" stroke-width="1"/>
+<text x="708" y="244" font-size="12" fill="#000">1</text>
+<text x="1148" y="432" font-size="12" fill="#000">N</text>
+<text x="850" y="372" font-size="11" fill="#000" text-anchor="start">inscreve-se (1v1)</text>
+<path d="M1280,200 V440" fill="none" stroke="#000" stroke-width="1"/>
+<text x="1288" y="220" font-size="12" fill="#000">1</text>
+<text x="1288" y="432" font-size="12" fill="#000">N</text>
+<text x="1272" y="345" font-size="11" fill="#000" text-anchor="end">inscreve-se (equipes)</text>
+<path d="M625,604 V790 H780" fill="none" stroke="#000" stroke-width="1"/>
+<text x="633" y="624" font-size="12" fill="#000">1</text>
+<text x="764" y="783" font-size="12" fill="#000">N</text>
+<text x="633" y="700" font-size="11" fill="#000" text-anchor="start">contém</text>
+<path d="M1200,580 V790 H1040" fill="none" stroke="#000" stroke-width="1"/>
+<text x="1208" y="600" font-size="12" fill="#000">1</text>
+<text x="1048" y="783" font-size="12" fill="#000">N</text>
+<text x="1208" y="690" font-size="11" fill="#000" text-anchor="start">disputa (lado A / B)</text>
+<rect x="60" y="60" width="220" height="116" fill="#ffffff" stroke="#6c8ebf" stroke-width="1"/>
+<rect x="60" y="60" width="220" height="34" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+<text x="170.0" y="82" font-size="13" font-weight="700" text-anchor="middle" fill="#000">GUERREIRO</text>
+<text x="70" y="112" font-size="11" fill="#000">PK</text>
+<text x="122" y="112" font-size="12" fill="#000" text-decoration="underline">id_guerreiro</text>
+<text x="70" y="136" font-size="11" fill="#000"></text>
+<text x="122" y="136" font-size="12" fill="#000">nome</text>
+<text x="70" y="160" font-size="11" fill="#000"></text>
+<text x="122" y="160" font-size="12" fill="#000">apelido</text>
+<rect x="500" y="60" width="250" height="164" fill="#ffffff" stroke="#6c8ebf" stroke-width="1"/>
+<rect x="500" y="60" width="250" height="34" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+<text x="625.0" y="82" font-size="13" font-weight="700" text-anchor="middle" fill="#000">JOGADOR</text>
+<text x="510" y="112" font-size="11" fill="#000">PK</text>
+<text x="562" y="112" font-size="12" fill="#000" text-decoration="underline">id_jogador</text>
+<text x="510" y="136" font-size="11" fill="#000"></text>
+<text x="562" y="136" font-size="12" fill="#000">usuario</text>
+<text x="510" y="160" font-size="11" fill="#000"></text>
+<text x="562" y="160" font-size="12" fill="#000">email</text>
+<text x="510" y="184" font-size="11" fill="#000"></text>
+<text x="562" y="184" font-size="12" fill="#000">senha</text>
+<text x="510" y="208" font-size="11" fill="#000"></text>
+<text x="562" y="208" font-size="12" fill="#000">pontos</text>
+<rect x="1080" y="60" width="240" height="140" fill="#ffffff" stroke="#6c8ebf" stroke-width="1"/>
+<rect x="1080" y="60" width="240" height="34" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+<text x="1200.0" y="82" font-size="13" font-weight="700" text-anchor="middle" fill="#000">EQUIPE</text>
+<text x="1090" y="112" font-size="11" fill="#000">PK</text>
+<text x="1142" y="112" font-size="12" fill="#000" text-decoration="underline">id_equipe</text>
+<text x="1090" y="136" font-size="11" fill="#000"></text>
+<text x="1142" y="136" font-size="12" fill="#000">nome</text>
+<text x="1090" y="160" font-size="11" fill="#000"></text>
+<text x="1142" y="160" font-size="12" fill="#000">tag</text>
+<text x="1090" y="184" font-size="11" fill="#000">FK</text>
+<text x="1142" y="184" font-size="12" fill="#000">id_capitao</text>
+<rect x="820" y="250" width="200" height="92" fill="#ffffff" stroke="#6c8ebf" stroke-width="1"/>
+<rect x="820" y="250" width="200" height="34" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+<text x="920.0" y="272" font-size="13" font-weight="700" text-anchor="middle" fill="#000">EQUIPE_MEMBRO</text>
+<text x="830" y="302" font-size="11" fill="#000">PK FK</text>
+<text x="882" y="302" font-size="12" fill="#000" text-decoration="underline">id_equipe</text>
+<text x="830" y="326" font-size="11" fill="#000">PK FK</text>
+<text x="882" y="326" font-size="12" fill="#000" text-decoration="underline">id_jogador</text>
+<rect x="60" y="330" width="220" height="188" fill="#ffffff" stroke="#6c8ebf" stroke-width="1"/>
+<rect x="60" y="330" width="220" height="34" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+<text x="170.0" y="352" font-size="13" font-weight="700" text-anchor="middle" fill="#000">RESULTADO_JOGO</text>
+<text x="70" y="382" font-size="11" fill="#000">PK</text>
+<text x="122" y="382" font-size="12" fill="#000" text-decoration="underline">id_resultado</text>
+<text x="70" y="406" font-size="11" fill="#000">FK</text>
+<text x="122" y="406" font-size="12" fill="#000">id_jogador</text>
+<text x="70" y="430" font-size="11" fill="#000">FK</text>
+<text x="122" y="430" font-size="12" fill="#000">id_guerreiro</text>
+<text x="70" y="454" font-size="11" fill="#000"></text>
+<text x="122" y="454" font-size="12" fill="#000">modo</text>
+<text x="70" y="478" font-size="11" fill="#000"></text>
+<text x="122" y="478" font-size="12" fill="#000">ondas</text>
+<text x="70" y="502" font-size="11" fill="#000"></text>
+<text x="122" y="502" font-size="12" fill="#000">pontos</text>
+<rect x="500" y="440" width="250" height="164" fill="#ffffff" stroke="#6c8ebf" stroke-width="1"/>
+<rect x="500" y="440" width="250" height="34" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+<text x="625.0" y="462" font-size="13" font-weight="700" text-anchor="middle" fill="#000">TORNEIO</text>
+<text x="510" y="492" font-size="11" fill="#000">PK</text>
+<text x="562" y="492" font-size="12" fill="#000" text-decoration="underline">id_torneio</text>
+<text x="510" y="516" font-size="11" fill="#000"></text>
+<text x="562" y="516" font-size="12" fill="#000">nome</text>
+<text x="510" y="540" font-size="11" fill="#000"></text>
+<text x="562" y="540" font-size="12" fill="#000">modo</text>
+<text x="510" y="564" font-size="11" fill="#000"></text>
+<text x="562" y="564" font-size="12" fill="#000">status</text>
+<text x="510" y="588" font-size="11" fill="#000">FK</text>
+<text x="562" y="588" font-size="12" fill="#000">id_organizador</text>
+<rect x="1080" y="440" width="240" height="140" fill="#ffffff" stroke="#6c8ebf" stroke-width="1"/>
+<rect x="1080" y="440" width="240" height="34" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+<text x="1200.0" y="462" font-size="13" font-weight="700" text-anchor="middle" fill="#000">INSCRICAO</text>
+<text x="1090" y="492" font-size="11" fill="#000">PK</text>
+<text x="1142" y="492" font-size="12" fill="#000" text-decoration="underline">id_inscricao</text>
+<text x="1090" y="516" font-size="11" fill="#000">FK</text>
+<text x="1142" y="516" font-size="12" fill="#000">id_torneio</text>
+<text x="1090" y="540" font-size="11" fill="#000">FK</text>
+<text x="1142" y="540" font-size="12" fill="#000">id_jogador</text>
+<text x="1090" y="564" font-size="11" fill="#000">FK</text>
+<text x="1142" y="564" font-size="12" fill="#000">id_equipe</text>
+<rect x="780" y="700" width="260" height="188" fill="#ffffff" stroke="#6c8ebf" stroke-width="1"/>
+<rect x="780" y="700" width="260" height="34" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+<text x="910.0" y="722" font-size="13" font-weight="700" text-anchor="middle" fill="#000">PARTIDA</text>
+<text x="790" y="752" font-size="11" fill="#000">PK</text>
+<text x="842" y="752" font-size="12" fill="#000" text-decoration="underline">id_partida</text>
+<text x="790" y="776" font-size="11" fill="#000">FK</text>
+<text x="842" y="776" font-size="12" fill="#000">id_torneio</text>
+<text x="790" y="800" font-size="11" fill="#000">FK</text>
+<text x="842" y="800" font-size="12" fill="#000">id_inscricao_a</text>
+<text x="790" y="824" font-size="11" fill="#000">FK</text>
+<text x="842" y="824" font-size="12" fill="#000">id_inscricao_b</text>
+<text x="790" y="848" font-size="11" fill="#000"></text>
+<text x="842" y="848" font-size="12" fill="#000">placar_a</text>
+<text x="790" y="872" font-size="11" fill="#000"></text>
+<text x="842" y="872" font-size="12" fill="#000">placar_b</text>
 </svg>
